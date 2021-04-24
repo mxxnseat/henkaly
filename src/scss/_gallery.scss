@@ -1,0 +1,10 @@
+.header-gallery{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5px;
+    
+    .gallery_img{
+        width: 100%;
+        max-width: 20%;
+    }
+}

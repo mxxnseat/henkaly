@@ -1,0 +1,23 @@
+@import "./menu";
+@import "./tabs";
+
+.header{
+    margin-top: 32px;
+    &_content-wraper{
+        margin-top: 72px;
+    }
+    &__content{
+        &-heading{
+            font-size: 72px;
+            line-height: 100%;
+        }
+        &-text{
+            font-family: $text_bold;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .button{
+            margin-top: 60px;
+        }
+    }
+}

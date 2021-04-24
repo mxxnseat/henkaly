@@ -1,0 +1,47 @@
+@font-face{
+    font-family: 'manrope_regular';
+    src: url('../assets/fonts/Manrope.ttf') format("truetype"),
+    url('../assets/fonts/Manrope.woff') format("woff"),
+    url('../assets/fonts/Manrope.woff2') format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'manrope_bold';
+    src: url('../assets/fonts/Manropebold.ttf') format("truetype"),
+    url('../assets/fonts/Manropebold.woff') format("woff"),
+    url('../assets/fonts/Manropebold.woff2') format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'manrope_black';
+    src: url('../assets/fonts/Manropesemibold.ttf') format("truetype"),
+    url('../assets/fonts/Manropesemibold.woff') format("woff"),
+    url('../assets/fonts/Manropesemibold.woff2') format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'regal-text_bold';
+    src: url('../assets/fonts/PFRegalTextPro-Bold.ttf') format("truetype"),
+    url('../assets/fonts/PFRegalTextPro-Bold.woff') format("woff");
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'regal-text_medium';
+    src: url('../assets/fonts/PFRegalTextPro-Medium.ttf') format("truetype"),
+    url('../assets/fonts/PFRegalTextPro-Medium.woff') format("woff");
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'regal-text_regular';
+    src: url('../assets/fonts/PFRegalTextPro-RegularA.ttf') format("truetype"),
+    url('../assets/fonts/PFRegalTextPro-RegularA.woff') format("woff");
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,45 @@
+.tabs{
+    .tab__item{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        justify-content: space-between;
+        border-radius: 3em;
+        border: 1px solid $red;
+        margin-bottom: 15px;
+    
+        &.active{
+            background-color: $yellow;
+            border: none;
+        }
+    
+        &-img_wrap{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-heading{
+            font-family: $text_bold;
+            font-size: 24px;
+            margin-bottom: 8px;
+            line-height: 100%;
+            color: $grey;
+        }
+        &-text{
+            font-size: 14px;
+            line-height: 100%;
+            font-family: $text;
+            color: $grey;
+        }
+    }
+    .tab__memo{
+        font-family: $text;
+        font-size: 12px;
+        line-height: 140%;
+        color: $grey;
+    }
+}

@@ -1,0 +1,36 @@
+@import "./fonts";
+@import "./vars";
+
+@import "./sale";
+@import "./header";
+@import "./gallery";
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: $text;
+    overflow-x: hidden;
+    min-height: 100vh;
+    color: $grey;
+    background-image: url('../assets/img/henkaly_bg.png');
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $heading;
+}
+a{
+    text-decoration: none;
+}
+.text_select-red{
+    color: $red;
+}
+.button{
+    padding: 26px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: $red;
+    text-transform: uppercase;
+    color: $white;
+    font-family: $text_black;
+}

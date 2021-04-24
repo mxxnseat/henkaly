@@ -1,0 +1,22 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__link{
+        color: $grey;
+        font-family: $text_bold;
+
+        &:hover{
+            text-decoration: none;
+            color: inherit;
+        }
+        &.social{
+            color: $red;
+                
+            &:hover{
+                color: $red;
+            }
+        }        
+    }
+}
