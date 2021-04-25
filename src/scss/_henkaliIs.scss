@@ -1,0 +1,21 @@
+.henkali_is{
+    .container{
+        background-image: url("../assets/img/henkaly_is-bg.png");
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    .content{
+        &__text{
+            font-family: $text;
+        }
+    }
+
+    .content_border{
+        margin-top: 40px;
+        border: 1px solid $red;
+        padding: 22px;
+        border-radius: 15px;
+
+        .heading { margin-bottom: 0; }
+    }
+}

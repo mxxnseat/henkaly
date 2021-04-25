@@ -1,3 +1,4 @@
+import { Button } from "../button";
 import { Menu } from "./menu";
 import { Tabs } from "./tabs";
 
@@ -21,9 +22,9 @@ export function Header(){
                                 Открой хинкальную с доставкой в своем городе!
                             </div>
 
-                            <button className="button col-7">
+                            <Button>
                                 получить бизнес план
-                            </button>
+                            </Button>
                         </div>
 
                         <Tabs />
