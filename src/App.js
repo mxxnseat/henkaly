@@ -7,6 +7,8 @@ import {Sale} from "./components/sale";
 import {Header} from "./components/header";
 import {Gallery} from "./components/gallery";
 import {HenkaliIs} from "./components/henkaliIs";
+import {Facts} from "./components/facts";
+import {Digital} from "./components/digital";
 
 function App() {
   const [saleVisibility, setSaleVisibility] = useState(true);
@@ -20,6 +22,8 @@ function App() {
       <Header />
       <Gallery />
       <HenkaliIs />
+      <Facts />
+      <Digital />
     </React.Fragment>
   );
 }
