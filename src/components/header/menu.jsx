@@ -20,7 +20,7 @@ export function Menu(){
                     <img src={instagram} alt="Инстаграм"/>
                 </a>
                 <a href="//tg" className="navigation__link social">
-                    <img src={instagram} alt="Инстаграм"/>
+                    <img src={telegram} alt="Телеграм"/>
                 </a>
             </nav>
         </div>

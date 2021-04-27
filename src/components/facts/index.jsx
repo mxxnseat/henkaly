@@ -35,7 +35,7 @@ export function Facts(){
                     </h2>
                     <div className="facts-wrapper col-12 p-0">
                         {
-                            factsContent.map((fact)=> <FactItem {...fact} />)
+                            factsContent.map((fact)=> <FactItem key={fact.heading} {...fact} />)
                         }
                     </div>
                     <Button Class="mx-auto">
