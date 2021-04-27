@@ -54,7 +54,12 @@
     &__heading{
         font-size: 22px;
         font-family: $text_bold;
-        color: #fff;
+        color: $white;
+    }
+    &__sub-heading{
+        font-family: $text;
+        font-size: 16px;
+        color: $white;
     }
     .container{
         background: none;
@@ -77,7 +82,6 @@
         position: absolute;
         bottom: 0;
     }
-
     .adress{
         cursor: pointer;
 
@@ -115,13 +119,11 @@
             }
         }
     }
-
     .populary{
         &-list{
             margin-top: 30px;
             margin-bottom: 60px; 
             justify-content: space-between;
-            
         }
 
         &__item{
@@ -158,5 +160,34 @@
         &__content{
             margin-left: 10px;
         }
+    }
+    .count{
+        padding: 0;
+        margin-bottom: 60px;
+
+        &__wrapper{
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin-top: 30px;
+        }
+        &__item{
+            width: 100%;
+            max-width: 80px;
+            height: 112px;
+            border-radius: 15px;
+            background-color: $white;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: $text_bold;
+            font-size: 64px;
+            color: $grey;
+        }
+    }
+    .gallery{
+        margin-bottom: 60px;
     }
 }

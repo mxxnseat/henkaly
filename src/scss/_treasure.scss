@@ -1,0 +1,97 @@
+.treasure{
+
+    .subhead{
+        font-family: $text;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: $grey;
+    }
+
+    &__item{
+        border: 1px solid $red;
+        border-radius: 15px;
+        flex: 1;
+        max-width: 350px;
+        margin-top: 60px;
+
+
+        &-head{
+            background-color: $red;
+            padding: 26px 40px;
+            color: $white;
+            font-family: $text_bold;
+            font-size: 24px;
+            line-height: 120%;
+            border-top-left-radius: 14px;
+            border-top-right-radius: 14px;
+            display: flex;
+            align-items: center;
+
+            img{
+                margin-right: 24px;
+            }
+        }
+    }
+
+    &__list{
+
+        &-item{
+            margin-top: 39px;
+            max-width: 270px;
+            min-height: 79px;
+            position: relative;
+
+            &.active{
+                &:before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 328px;
+                    height: 105px;
+                    background-image: url("../assets/img/treasure_flag.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    z-index: 0;
+                    left: -49px;
+                    top: -12px;
+                }
+                .treasure__list-item__head{
+                    color: #75151C;
+                    font-family: $heading;
+                    font-size: 22px;
+                }
+                .treasure__list-item__text{
+                    color: $darkBlue;
+                }
+                
+            }
+        
+            &__head{
+                color: $darkBlue;
+                font-family: $text_bold;
+                font-size: 18px;
+                line-height: 140%;
+                margin-bottom: 6px;
+                position: relative;
+                z-index: 1;
+            }
+            &__text{
+                color: $grey;
+                font-family: $text;
+                font-size: 14px;
+                line-height: 120%;
+                margin-bottom: 10.5px;
+                position: relative;
+                z-index: 1;
+            }
+            &__subtext{
+                color: #666666;
+                font-size: 10px;
+                line-height: 120%;
+                font-family: $text;
+                margin-top: 6px;
+            }
+        }
+    }
+}
