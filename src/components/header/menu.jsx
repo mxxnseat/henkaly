@@ -1,6 +1,6 @@
 import logo from "../../assets/img/logo.png";
-import instagram from "../../assets/img/instagram.svg";
-import telegram from "../../assets/img/telegram.svg";
+import instagram from "../../assets/img/icons/instagram.svg";
+import telegram from "../../assets/img/icons/telegram.svg";
 
 export function Menu(){
     return (

@@ -10,6 +10,8 @@ import hachapuri from "../../assets/img/icons/hachapuri.png";
 
 import { FacilityItem } from "./facilityItem";
 import { PopularyItem } from "./popularyItem";
+import { Count } from "./count";
+import { Button } from "../button";
 
 
 export function Digital(){
@@ -71,9 +73,21 @@ export function Digital(){
                             <div className="populary-list row сol-12">
                                 {
                                     popularyGoods.length ? popularyGoods.map(good=><PopularyItem key={good.header}{...good}/>): ''
-                                    }
+                                }
                             </div>
                         </div>
+                        <div className="count col-12 pl-0">
+                            <div className="row align-items-center pl-0">
+                                <div className="digital__heading col-3">Счетчик хинкали</div>
+                                <div className="digital__sub-heading col-9">Уже сварено и съедено</div>
+                            </div>
+                            <Count />
+                        </div>
+                        <div className="gallery">
+                            <div className="digital__heading col-12">Фотогалерея</div>
+                            
+                        </div>
+                        <Button Class="mx-auto">Получить фин. модель</Button>
                     </div>
                 </div>
             </div>
