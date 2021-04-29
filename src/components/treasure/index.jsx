@@ -74,7 +74,7 @@ export function Treasure() {
 
     return (
         <section className="treasure">
-            <div className="container pt-5">
+            <div className="container pt-5 pb-5">
                 <h2 className="heading col-12 p-0">
                     <span className="text_select-red">Ценности </span>
                     хинкальной

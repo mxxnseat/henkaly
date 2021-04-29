@@ -1,0 +1,47 @@
+.franchise{
+
+
+    &__item{
+        width: 100%;
+        max-width: 506px;
+    }
+    .subhead{
+        margin-bottom: 120px;
+    }
+    &__slogan{
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0.38em;
+        text-transform: uppercase;
+        color: #8D191D;
+        font-family: $text_bold;
+        margin-bottom: 12px;
+    }
+    &__heading{
+        color: $grey;
+        font-size: 36px;
+        line-height: 100%;
+        font-family: $text_bold;
+        margin-bottom: 30px;
+    }
+    &__list{
+        &__item{
+            color: $grey;
+            font-size: 16px;
+            line-height: 140%;
+            position: relative;
+            font-family: $text;
+            margin-bottom: 12px;
+
+            &:before{
+                content: "";
+                display: inline-block;
+                width: 8px;
+                border-radius: 50%;
+                height: 8px;
+                background-color: $lightRed;
+                margin-right: 24px;
+            }
+        }
+    }
+}

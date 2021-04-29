@@ -11,7 +11,9 @@ import hachapuri from "../../assets/img/icons/hachapuri.png";
 import { FacilityItem } from "./facilityItem";
 import { PopularyItem } from "./popularyItem";
 import { Count } from "./count";
-import { Button } from "../button";
+import { Button } from "../total/button";
+import { Carousel } from "./carousel";
+
 
 
 export function Digital(){
@@ -49,8 +51,13 @@ export function Digital(){
             header: "Горячие блюда",
             percent: "40%"
         },
-    ]
+    ];
 
+    const slides = [
+        require("../../assets/img/carousel/1.png").default,
+        require("../../assets/img/carousel/2.png").default,
+        require("../../assets/img/carousel/3.png").default,
+    ];
     return (
         <section className="digital">
             <div className="container">
@@ -85,7 +92,8 @@ export function Digital(){
                         </div>
                         <div className="gallery">
                             <div className="digital__heading col-12">Фотогалерея</div>
-                            
+
+                            <Carousel slides={slides} />
                         </div>
                         <Button Class="mx-auto">Получить фин. модель</Button>
                     </div>

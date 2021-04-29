@@ -1,0 +1,107 @@
+.team{
+    &:after{
+        content: '';
+        background-image: url("../assets/img/team_bottom-bg.png");
+        display: block;
+        height: 45px;
+        width: 100%;
+    }
+    .container{
+        padding-bottom: 60px;
+    }
+    .row.team_row{
+        border: 2px solid #E0E0E0; 
+        border-radius: 30px; 
+        padding: 60px 95px;
+    }
+    &_questions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+
+        &__text{
+            font-family: $text;
+            color: $darkBlue;
+            font-size: 20px;
+            line-height: 140%;
+            max-width: 477px;
+            width: 100%;
+        }
+    }
+    .tab__item{
+        cursor: pointer;
+    }
+
+    .our-team{
+        margin-top: 66px;
+        justify-content: space-between;
+        width: 100%;
+        &__item.chief{
+            max-width: 350px;
+        }
+        &__helpers{
+            .our-team__item{
+                width: 100%;
+                max-width: 477px;
+                margin-bottom: 40px;
+
+                img{
+                    width: 160px;
+                    height: 160px;
+                }
+                .our-team__name,
+                .our-team__expirience{
+                    margin: 12px 0;
+                }
+                .our-team__name{
+                    font-size: 20px;
+                }
+                .our-team__emp-position{
+                    font-size: 14px;
+                }
+            }
+        }
+        &__name{
+            font-family: $text_bold;
+            font-size: 24px;
+            line-height: 100%;
+            color: $darkBlue;
+            margin: 30px 0;
+        }
+        &__emp-position{
+            font-family: $text_bold;
+            font-size: 18px;
+            line-height: 120%;
+            color: $red;
+            margin-bottom: 24px;
+
+        }
+        &__expirience{
+            color: $grey;
+            font-size: 14px;
+            line-height: 120%;
+        }
+        &__communication{
+            img{
+                max-width: 24px;
+                max-height: 24px;
+            }
+        }
+
+        &__phone{
+            font-family: $text_bold;
+            font-size: 18px;
+            color: $darkBlue;
+            line-height: 140%;
+        }
+        .button{
+            width: 190px;
+            height: 48px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
