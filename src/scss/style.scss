@@ -8,6 +8,8 @@
 @import "./facts";
 @import "./digital";
 @import "./treasure";
+@import "./team";
+@import "./franchise";
 
 *{
     box-sizing: border-box;
@@ -63,4 +65,23 @@ ul,ol{
 }
 section .container{
     background-color: rgba(255,255,255, .95);
+}
+.subhead{
+    font-family: $text;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: $grey;
+}
+
+.frame-content{
+    margin-top: 40px;
+    border: 1px solid $red;
+    padding: 22px;
+    border-radius: 15px;
+    
+    color: $darkBlue;
+    font-size: 30px;
+
+    .heading { margin-bottom: 0; }
 }

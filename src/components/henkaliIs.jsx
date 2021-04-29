@@ -23,7 +23,7 @@ export function HenkaliIs(){
                                 и демократичной ценой.
                             </div>
                         </div>
-                        <div className="content_border col-10">
+                        <div className="content_border frame-content col-10">
                             <h4 className="heading">
                                 Хинкальные — это <span className="text_select-red">идеальное решение</span> запроса потребителей 
                                 в общепите, когда важна цена 

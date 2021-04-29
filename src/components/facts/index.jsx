@@ -2,7 +2,7 @@ import {FactItem} from "./factItem";
 import factImg_1 from "../../assets/img/facts/1.jpg";
 import factImg_2 from "../../assets/img/facts/2.jpg";
 import factImg_3 from "../../assets/img/facts/3.jpg";
-import { Button } from "../button";
+import { Button } from "../total/button";
 
 
 export function Facts(){
