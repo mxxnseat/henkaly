@@ -31,10 +31,10 @@ export function Franchise() {
             slogan: "архитектура кухни",
             heading: "Производство",
             list: [
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
+                "Технологии производства блюд в видео-формате",
+                "Технологические карты",
+                "Макеты базового меню",
+                "Инструкции по контролю качества продукции",
             ],
             buttonText: "ПОЛУЧИТЬ пример технологии"
         },
@@ -42,13 +42,13 @@ export function Franchise() {
             slogan: "продвижение",
             heading: "Маркетинг",
             list: [
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur."
+                "Маркетинговый план открытия",
+                "Рекомендации по привлечению гостей",
+                "Размещение информации на главном сайте компании",
+                "Регистрация на геосервисах и отзовиках",
+                "Создание страниц в социальных сетях",
+                "Предоставление сайта-магазина доставки",
+                "Инфлюенс-маркетинг"
             ],
             buttonText: "ПОЛУЧИТЬ пример бизнес плана"
         },
@@ -56,13 +56,13 @@ export function Franchise() {
             slogan: "КАЧЕСТВЕННЫЙ СЕРВИС",
             heading: "Персонал",
             list: [
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur.",
-                "Lorem ipsum dolor sit amet consectetur."
+                "Инструкции по подбору персонала",
+                "Обучающие материалы",
+                "Должностные инструкции",
+                "Макеты формы для сотрудников",
+                "Инструкции по контролю качества работы сотрудников",
+                "Чек-листы работы",
+                "Инструкции по проведению инвентаризации"
             ],
             buttonText: "получить пример инструкции"
         }
@@ -70,26 +70,26 @@ export function Franchise() {
 
     return (
         <section className="franchise">
-            <div className="container pt-5">
+            <div className="container pt-5 pb-5">
                 <div className="row">
                     <h2 className="heading">
                         <span className="text_select-red">Пакет франчайза</span> «Старик Хинкалыч»
                         </h2>
 
-                    <div class="subhead col-12 p-0">
+                    <div className="subhead col-12 p-0">
                     Что входит в пакет франчайза «Старик Хинкалыч».
                     </div>
 
-                    <div className="row col-12">
+                    <div className="row col-12 mx-auto justify-content-center">
                         {
                         franchiseData.map((el,index)=>{
-                            return <FranchiseItem {...el} number={index+1} />
+                            return <FranchiseItem {...el} key={index} number={index+1} />
                         })
                         }
                     </div>
                     
 
-                    <Button>Получить бизнес план</Button>
+                    <Button Class='mx-auto'>Получить бизнес план</Button>
                 </div>
             </div>
         </section>

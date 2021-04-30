@@ -8,9 +8,9 @@ export function Carousel({slides}){
         <div className="slider">
             <div className="carousel">
                 {
-                    slides.map((slide)=>{
+                    slides.map((slide, index)=>{
                         return (
-                            <div className="carousel__item">
+                            <div className="carousel__item" key={index}>
                                 <img src={slide} alt=""/>
                             </div>
                         );

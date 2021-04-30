@@ -1,5 +1,4 @@
 import { Tab } from "../total/tab";
-import {Button} from "../total/button";
 
 import phone from "../../assets/img/icons/phone.svg";
 import chief from "../../assets/img/team/1.png";
@@ -13,7 +12,7 @@ export function Team() {
     return (
         <section className="team">
             <div className="container pt-5">
-                <div className="row col-12 team_row">
+                <div className="row mx-auto col-12 team_row">
                     <h2 className="heading">
                         Наша <span className="text_select-red">команда</span>
                     </h2>
