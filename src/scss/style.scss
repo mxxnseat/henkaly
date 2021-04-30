@@ -10,6 +10,8 @@
 @import "./treasure";
 @import "./team";
 @import "./franchise";
+@import "./finance";
+@import "./youget";
 
 *{
     box-sizing: border-box;
@@ -58,6 +60,7 @@ h4.heading{
 }
 ul,ol{
     list-style-type: none;
+    padding: 0;
     li{
         padding: 0;
         margin: 0;

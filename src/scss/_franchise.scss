@@ -1,21 +1,75 @@
 .franchise{
-
-
+    &:after{
+        content: '';
+        background-image: url("../assets/img/digital_top-bg_sub.png");
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-size: cover;
+        width: 100%;
+        height: 69px;
+        display: block;
+    }
     &__item{
         width: 100%;
-        max-width: 506px;
+        max-width: 445px;
+        position: relative;
+        margin-bottom: 150px;
+        &:nth-child(2n),
+        &:nth-child(5){
+            margin-left: 125px;
+        }
     }
     .subhead{
         margin-bottom: 120px;
+    }
+    &__number{
+        color: $lightGrey;
+        font-size: 164px;
+        position: absolute;
+        font-family: $text_bold;
+        left: -66px;
+        top: -103px;
+        
+    }
+    &__link{
+        text-transform: lowercase;
+        color: $red;
+        font-family: $text_black;
+        font-size: 16px;
+        line-height: 100%;
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        &:after{
+            content: '';
+            display: inline-block;
+            background-image: url('../assets/img/icons/arrow_right.svg');
+            background-size: contain;
+            width: 15px;
+            height: 14px;
+            margin-left: 15px;
+        }
     }
     &__slogan{
         font-size: 12px;
         line-height: 100%;
         letter-spacing: 0.38em;
         text-transform: uppercase;
-        color: #8D191D;
+        color: $red;
         font-family: $text_bold;
         margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        &:before{
+            content: '';
+            margin-right: 12px;
+            width: 30px;
+            height: 1px;
+            background-color: $red;
+            display: inline-block;
+        }
     }
     &__heading{
         color: $grey;
@@ -23,6 +77,8 @@
         line-height: 100%;
         font-family: $text_bold;
         margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
     }
     &__list{
         &__item{
@@ -32,15 +88,17 @@
             position: relative;
             font-family: $text;
             margin-bottom: 12px;
+            padding-left: 24px;
 
             &:before{
                 content: "";
-                display: inline-block;
+                position: absolute;
+                left: 0;
+                top: 8px;
                 width: 8px;
                 border-radius: 50%;
                 height: 8px;
                 background-color: $lightRed;
-                margin-right: 24px;
             }
         }
     }

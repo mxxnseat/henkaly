@@ -12,6 +12,8 @@ import {Digital} from "./components/digital";
 import {Treasure} from "./components/treasure";
 import { Team } from "./components/team";
 import { Franchise } from "./components/franchise";
+import { Finance } from "./components/finance";
+import { YouGet } from "./components/youget";
 
 function App() {
   const [saleVisibility, setSaleVisibility] = useState(true);
@@ -30,6 +32,8 @@ function App() {
       <Treasure />
       <Team />
       <Franchise />
+      <Finance />
+      <YouGet />
     </React.Fragment>
   );
 }
