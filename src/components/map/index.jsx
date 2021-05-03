@@ -31,7 +31,7 @@ export function HenkaliMap(){
                                 {
                                     perspectiveList.map(city=>{
                                         return (
-                                            <div className="perspective_city__item">
+                                            <div key={city} className="perspective_city__item">
                                                 {city}
                                             </div>
                                         )
@@ -39,7 +39,7 @@ export function HenkaliMap(){
                                 }
                             </div>
                         </div>
-                        <div className="henkali_map__map col-9 row">
+                        <div className="henkali_map__map col-9 flex-nowrap row">
                             <img className="map_part-1" src={require("../../assets/img/map/part_1.png").default} alt="Карта хенкали" />
                             <img className="map_part-2" src={require("../../assets/img/map/part_2.png").default} alt="Карта хенкали" />
                             <img className="map_part-3" src={require("../../assets/img/map/part_3.png").default} alt="Карта хенкали" />
