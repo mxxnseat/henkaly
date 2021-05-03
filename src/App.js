@@ -15,6 +15,8 @@ import { Franchise } from "./components/franchise";
 import { Finance } from "./components/finance";
 import { YouGet } from "./components/youget";
 import { HenkaliMap } from "./components/map";
+import { Blog } from "./components/blog";
+import { Reviews } from "./components/reviews";
 
 function App() {
   const [saleVisibility, setSaleVisibility] = useState(true);
@@ -36,6 +38,8 @@ function App() {
       <Finance />
       <YouGet />
       <HenkaliMap />
+      <Blog />
+      <Reviews />
     </React.Fragment>
   );
 }

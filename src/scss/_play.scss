@@ -1,0 +1,35 @@
+.play_btn{
+    background-color: $red;
+    overflow: hidden;
+    position: absolute;
+    width: 52px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border-radius: 8px;
+
+    &__triangle{
+        margin-left: 12px;
+        border: 8px solid transparent;
+        border-left: 12px solid #ffffff;
+    }
+}
+
+.main-video{
+    .play_btn{
+        width: 96px;
+        height: 64px;
+        border-radius: 12px;
+
+        &__triangle{
+            margin-left: 21px;
+            border: 15px solid transparent;
+            border-left: 24px solid #ffffff;
+        }
+    }
+}
