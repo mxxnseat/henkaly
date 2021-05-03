@@ -1,0 +1,48 @@
+.henkali_map{
+    .heading{
+        margin-top: 180px;
+        margin-bottom: 60px;
+    }
+    &__map{
+        flex-wrap: nowrap;
+        background-image: url('../assets/img/map/legend.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        .map_part-1{
+            margin-right: -43px;
+        }
+    }
+    .button{
+        margin-top: 90px;
+        margin-bottom: 116px;
+    }
+    .perspective_city{
+        &__heading{
+            font-family: $text_bold;
+            font-size: 16px;
+            line-height: 120%;
+            color: $black;
+            margin-bottom: 21px;
+        }
+
+        &__item{
+
+            display: flex;
+            align-items: center;
+            font-family: $text;
+            font-size: 14px;
+            line-height: 120%;
+            color: $black;
+            margin-bottom: 24px;
+            &:before{
+                content: "";
+                background-image: url("../assets/img/icons/mark.svg");
+                display: inline-block;
+                width:8px;
+                height:12px;
+                background-repeat: no-repeat;
+                margin-right: 10px;
+            }
+        }
+    }
+}
