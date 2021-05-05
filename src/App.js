@@ -17,6 +17,9 @@ import { YouGet } from "./components/youget";
 import { HenkaliMap } from "./components/map";
 import { Blog } from "./components/blog";
 import { Reviews } from "./components/reviews";
+import { Questions } from "./components/questions";
+import { Feedback } from "./components/feedback";
+import { Footer } from "./components/footer";
 
 function App() {
   const [saleVisibility, setSaleVisibility] = useState(true);
@@ -40,6 +43,9 @@ function App() {
       <HenkaliMap />
       <Blog />
       <Reviews />
+      <Questions />
+      <Feedback />
+      <Footer />
     </React.Fragment>
   );
 }
