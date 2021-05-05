@@ -1,0 +1,98 @@
+.footer{
+    background-color: $darkBlue;
+    padding-top: 60px;
+
+    &__list{
+        
+        &-header{
+            font-family: $text_bold;
+            font-size: 18px;
+            color: $white;
+            line-height: 140%;
+            margin-bottom: 15px;
+        }
+
+        .social_contacts{
+            a{
+                font-size: 14px;
+                line-height: 140%;
+    
+                color: $white;
+                font-family: $text;
+                width: 24px;
+                height: 24px;
+                background-repeat: no-repeat;
+                background-size: 24px auto;
+
+                &:not(:first-child){
+                    margin-left: 37px;
+                }
+               
+            }
+            &-wa{
+                background-image: url("../assets/img/icons/whatsapp_white.svg");
+            }
+            &-tg{
+                background-image: url("../assets/img/icons/telegram_stroke-white.svg");
+            }
+            &-mail{
+                background-image: url("../assets/img/icons/email.svg");
+            }
+
+            &-fb, &-yt, &-inst, &-vk{
+                margin-left: 15px !important;
+                padding-left:30px;
+                margin-bottom: 23px;
+                opacity: .5;
+            }
+            &-fb{
+                background-image: url('../assets/img/icons/facebook.svg');
+            }
+            &-yt{
+                background-image: url('../assets/img/icons/youtube.svg');
+            }
+            &-inst{
+                background-image: url('../assets/img/icons/instagram_white.svg');
+            }
+            &-vk{
+                background-image: url('../assets/img/icons/vk.svg');
+            }
+        }
+    }
+    &__link{
+        margin-bottom: 8px;
+        font-family: $text;
+        color: $white;
+        font-size: 14px;
+        line-height: 140%;
+        display: block;
+        white-space: nowrap;
+        &:hover{
+            color: $white;
+        }
+        &.phone{
+            font-family: $text_bold;
+            font-size: 20px;
+            line-height: 140%;
+            color: $white;
+            margin-top: -5px;
+            margin-bottom: 23px;
+        }
+    }
+
+    .copyright{
+        justify-content: space-between;
+        border-top: 1px solid rgba(255,255,255,.25);
+        padding: 30px 0;
+        &__text{
+            font-family: $text;
+            font-size: 14px;
+            line-height: 140%;
+            color: $white;
+        }
+        &__link{
+            color: $white;
+            opacity: .5;
+        }
+    }
+}

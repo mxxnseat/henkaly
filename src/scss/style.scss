@@ -16,16 +16,22 @@
 @import "./blog";
 @import "./play";
 @import "./reviews";
+@import "./questions";
+@import "./feedback";
+@import "./modal";
+@import "./footer";
 
 *{
     box-sizing: border-box;
 }
 body{
     font-family: $text;
-    overflow-x: hidden;
     min-height: 100vh;
     color: $grey;
     background-image: url('../assets/img/henkaly_bg.png');
+}
+html,body{
+    overflow-x: hidden
 }
 h1,h2,h3,h4,h5,h6{
     font-family: $heading;

@@ -1,0 +1,139 @@
+.feedback_modal{
+    padding: 90px 0;
+    background-color: $white;
+    border-radius: 30px;
+    backdrop-filter: blur(128.067px);
+
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+
+        .hidden_checkbox{
+            display: none;
+        
+            &:checked + span{
+                background-image: url('../assets/img/icons/check.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+        &-checkbox{
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            border: 3px solid #ccc;
+            display: inline-block;
+            margin-right: 16px;
+        }
+
+        label{
+            margin-top: 30px;
+            margin-bottom: 60px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: .02em;
+            color: #666;
+            font-family: $text;
+
+            span a{
+                text-decoration: underline;
+
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
+
+        .social{
+            font-family: $text;
+            font-size: 10px;
+            line-height: 120%;
+            color: #666;
+            background-repeat: no-repeat;
+            background-size: 36px auto;
+            width: 72px;
+            height: 63px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            background-position-x: center;
+            text-decoration: none;
+            &.tg{
+                background-image: url("../assets/img/icons/telegram_stroke.svg");
+            }
+            &.wa{
+                background-image: url("../assets/img/icons/whatsapp.svg");
+            }
+        }
+    }
+    &__input{
+        width: 100%;
+        max-width: 286px;
+        background-color: #EFEFEF;
+        outline: none;
+        border-radius: 15px;
+        height: 60px;
+        padding-left: 16px;
+        border-color: transparent;
+
+        &:nth-child(2){
+            margin: 0 30px;
+        }
+        &::placeholder{
+            color: #666;
+            font-family: $text;
+            font-size: 20px;
+        }
+    }
+    .heading{
+        text-align: center;
+    }
+    &__getlist{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__get-item{
+        display: flex;
+        flex: 1;
+        max-width: 400px;
+        padding: 25.5px 15px;
+        border: 3px solid $green;
+        border-radius: 15px;
+        align-items: center;
+
+        &:first-child:after{
+            content: '';
+            display: block;
+            width: 35px;
+            height: 30px;
+            background-image: url("../assets/img/icons/arrow_green.svg");
+            background-size: containt;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .number{
+            color: $green;
+            font-family: $heading;
+            font-size: 68px;
+            position: absolute;
+        }
+        .text{
+            color: $darkBlue;
+            font-size: 18px;
+            font-family: $text_bold;
+            line-height: 140%;
+            max-width: 322px;
+            margin-left: 48px;
+        }   
+    }
+}
