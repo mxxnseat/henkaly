@@ -116,17 +116,17 @@ section .container{
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width: 540px){
     h2.heading{
         font-size: 32px;
         text-align: center;
-        max-width: 350px;
+        max-width: 315px;
         margin: 0 auto;
         margin-bottom: 30px;
     }
     .subhead{
         font-size: 14px;
-        max-width: 320px;
+        max-width: 315px;
         margin: 0 auto;
         margin-bottom: 30px;
     }

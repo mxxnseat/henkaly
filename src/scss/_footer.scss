@@ -96,3 +96,34 @@
         }
     }
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 540px){
+    .footer{
+        &__list{
+            max-width: 315px;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 30px;
+
+
+            .social_contacts{
+                justify-content: center;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        .copyright{
+            flex-direction: column;
+            padding-bottom: 0;
+            &__text,&__link{
+                max-width: 315px;
+                font-size: 12px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
