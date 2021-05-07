@@ -80,7 +80,7 @@
         &__expirience{
             color: $grey;
             font-size: 14px;
-            line-height: 120%;
+            line-height: 140%;
         }
         &__communication{
             img{
@@ -104,4 +104,76 @@
             justify-content: center;
         }
     }
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+    .team{
+        &:after{
+            content: none;
+        }
+        .row.team_row{
+            border: none;
+            padding: 0;
+        }
+        h2.heading{
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .subhead{
+            max-width: 350px;
+            margin: 0 auto;
+        }
+        &_questions{
+            max-width: 350px;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 52px;
+            flex-direction: column;
+            &__text{
+                margin-top: 30px;
+                font-size: 14px;
+                max-width: 350px;
+            }
+        }
+
+        .our-team{
+            padding: 0;
+            justify-content: center;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+
+            &__item{
+                justify-content: space-between;
+                &.chief{
+                    margin-bottom: 30px;
+
+
+                    .our-team__name{
+                        font-size: 24px;
+                    }
+                }
+            }
+            &__helpers{
+                max-width: 350px;
+                .our-team__item .our-team__name{
+                    font-size: 16px;
+                }
+                .our-team__item .our-team__emp-position{
+                    font-size: 12px;
+                }
+            }
+            &__name{
+                white-space: nowrap;
+            }
+            &__emp-position,
+            &__expirience{
+                font-size: 12px;
+            }
+            &__phone{
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+        }
+    }   
 }

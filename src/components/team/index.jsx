@@ -49,7 +49,7 @@ export function Team() {
                                     <img src={empl_1} alt="картинка человека" />
                                 </div>
 
-                                <div className="col-7">
+                                <div className="col-md-7 col-6">
                                     <div className="our-team__name">Владимир Кисляков</div>
                                     <div className="our-team__emp-position">Управляющий сети «Старик Хинкалыч»</div>
                                     <div className="our-team__expirience">
@@ -65,7 +65,7 @@ export function Team() {
                                     <img src={empl_2} alt="картинка человека" />
                                 </div>
 
-                                <div className="col-7">
+                                <div className="col-md-7 col-6">
                                     <div className="our-team__name">Евгения Рыбинская</div>
                                     <div className="our-team__emp-position">Маркетолог</div>
                                     <div className="our-team__expirience">
@@ -83,7 +83,7 @@ export function Team() {
                                     <img src={empl_3} alt="картинка человека" />
                                 </div>
 
-                                <div className="col-7">
+                                <div className="col-md-7 col-6">
                                     <div className="our-team__name">Александр Суворов</div>
                                     <div className="our-team__emp-position">Менеджер по продажам «Старик Хинкалыч»</div>
                                     <div className="our-team__expirience">
@@ -95,7 +95,7 @@ export function Team() {
                                 </div>
                             </div>
                         
-                            <div className="col-12 row align-items-center justify-content-between">
+                            <div className="col-12 row justify-content-md-between align-items-center justify-content-center">
                                 <div className="our-team__phone">+7 978 062-52-81</div>
                                 <button className='button'>позвонить</button>
                             </div>                            

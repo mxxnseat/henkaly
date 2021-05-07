@@ -33,3 +33,29 @@
         }
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 540px){
+    .main-video{
+        .play_btn{
+            width: 72px;
+            height: 48px;
+            border-radius: 8px;
+    
+            &__triangle{
+                margin-left: 10px;
+                border: 10px solid transparent;
+                border-left: 18px solid #ffffff;
+            }
+        }
+    }
+    .play_btn{
+        width: 66px;
+        height: 43.6px;
+    
+        &__triangle{
+            margin-left: 12px;
+            border: 8px solid transparent;
+            border-left: 12px solid #ffffff;
+        }
+    }
+}

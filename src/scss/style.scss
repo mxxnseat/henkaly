@@ -49,6 +49,7 @@ a{
     display: block;
     outline: none;
     background-color: $red;
+    font-size: 20px;
     text-transform: uppercase;
     max-width: 350px;
     width: 100%;
@@ -97,4 +98,39 @@ section .container{
     font-size: 30px;
 
     .heading { margin-bottom: 0; }
+}
+.logo{
+    width: 100%;
+    max-width: 193px;
+    height: auto;
+}
+@media screen and (max-width: 1366px){
+    body{
+        background-image: none;
+        background-color: $white;
+    }
+}
+@media screen and (max-width: 1200px){
+    .button{
+        max-width: 315px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    h2.heading{
+        font-size: 32px;
+        text-align: center;
+        max-width: 350px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .subhead{
+        font-size: 14px;
+        max-width: 320px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .button{
+        font-size:18px
+    }
 }

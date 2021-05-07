@@ -34,24 +34,26 @@ export function Model(){
     ]
 
     return (
-        <div className="col-6 pt-5 pb-5 finance__model">
-            <h2 className="heading">Финансовая модель</h2>
-            <div className="finance__model-period">Мы работаем с 2016 года.<br/>20 заведений уже открыто.</div>
-            {
-                modelList.map((model,index)=>{
-                    return (
-                        <div key={index} className="finance__model-item row align-items-center">
-                            <div className="tab__item-img_wrap">
-                                <img src={model.img} className="tab__item-img" />
+        <div className="col-12 col-md-6 pt-5 pb-5 finance__model">
+            <div className="col-9 mx-auto">
+                <h2 className="heading">Финансовая модель</h2>
+                <div className="finance__model-period">Мы работаем с 2016 года.<br/>20 заведений уже открыто.</div>
+                {
+                    modelList.map((model,index)=>{
+                        return (
+                            <div key={index} className="finance__model-item row align-items-center">
+                                <div className="tab__item-img_wrap">
+                                    <img src={model.img} className="tab__item-img" alt={model.text} />
+                                </div>
+                                <div className="tab__item-content_wrap col-9">
+                                    <div className="tab__item-text">{model.text}</div>
+                                    <div className="tab__item-heading">{model.value}</div>
+                                </div>
                             </div>
-                            <div className="tab__item-content_wrap col-10">
-                                <div className="tab__item-text">{model.text}</div>
-                                <div className="tab__item-heading">{model.value}</div>
-                            </div>
-                        </div>
-                    )
-                })
-            }
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }

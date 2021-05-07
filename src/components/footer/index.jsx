@@ -2,7 +2,7 @@ export function Footer(){
     return (
         <footer className="footer">
             <div className="container row mx-auto p0">
-                <div className="col-12 mb-5 row p-0 mx-auto">
+                <div className="col-12 mb-5 row flex-nowrap p-0 mx-auto">
                     <div className="footer__list col-2">
                         <div className="footer__list-header">Концепция </div>
 
@@ -13,9 +13,9 @@ export function Footer(){
                     <div className="footer__list col-2">
                         <div className="footer__list-header">Команда</div>
 
-                        <a className="footer__link">Пакет франчайза</a>
-                        <a className="footer__link">Отзывы франчази</a>
-                        <a className="footer__link">F.A.Q.</a>
+                        <a href="#" className="footer__link">Пакет франчайза</a>
+                        <a href="#" className="footer__link">Отзывы франчази</a>
+                        <a href="#" className="footer__link">F.A.Q.</a>
                     </div>
                     <div className="footer__list col-2">
                         <div className="footer__list-header">Условия</div>
@@ -24,7 +24,7 @@ export function Footer(){
                         <a href="#" className="footer__link">Этапы взаимодействия</a>
                         <a href="#" className="footer__link">Преимущества</a>
                     </div>
-                    <div className="footer__list col-3">
+                    <div className="footer__list col-3 ml-3">
                         <div className="footer__list-header">Контакты</div>
 
                         <a href="tel:+7 978 062 52 81" className="footer__link phone">+7 978 062 52 81</a>

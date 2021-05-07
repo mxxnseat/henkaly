@@ -1,28 +1,36 @@
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/logo.svg";
 import instagram from "../../assets/img/icons/instagram.svg";
 import telegram from "../../assets/img/icons/telegram.svg";
 
+import {BurgerMenu} from "./burger_menu";
+
 export function Menu(){
     return (
-        <div className="row">
-            <img src={logo} className="col-2" alt="Логотип" />
-            <nav className="navigation col-9 offset-1">
+        <div className="row justify-content-between  align-items-center">
+
+            <BurgerMenu />
+            <div className="logo-wrap col-3 p-0">
+                <img src={logo} className="logo" alt="Логотип" />
+            </div>
+            <nav className="navigation col-5">
                 <a href="" className="navigation__link">Концепция</a>
                 <a href="" className="navigation__link">Команда</a>
                 <a href="" className="navigation__link">Условия</a>
                 <a href="" className="navigation__link">Контакты</a>
-
-
-                <a href="tel:+79780625281" className="navigation__link social">
-                    +7 978 062 52 81
-                </a>
-                <a href="//instagram.com" className="navigation__link social">
+            </nav>
+            <div className="social col-3">
+                <div className="social__link phone">
+                    <a href="tel:+79780625281" className="social__link social phone">
+                    +79780625281
+                    </a>
+                </div>
+                <a href="//instagram.com" className="social__link social">
                     <img src={instagram} alt="Инстаграм"/>
                 </a>
-                <a href="//tg" className="navigation__link social">
+                <a href="//tg" className="social__link social">
                     <img src={telegram} alt="Телеграм"/>
                 </a>
-            </nav>
+            </div>
         </div>
     )
 }

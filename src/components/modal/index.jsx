@@ -18,7 +18,7 @@ export function FeedBackModal() {
                     {
                         getList.map((text, index) => {
                             return (
-                                <div className="feedback_modal__get-item">
+                                <div key={index} className="feedback_modal__get-item">
                                     <div className="number">{index + 1}</div>
                                     <div className="text">{text}</div>
                                 </div>

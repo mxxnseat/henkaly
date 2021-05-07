@@ -10,26 +10,32 @@ export function Reviews(){
                 </h2>
                 <div className="subhead">Отзывы наших надежных партнеров и истории успеха.</div>
 
-                <div className="row col-12 mx-auto align-items-center">
-                    <div className="reviews__arrow left"></div>
-                    <div className="reviews-list col-10 mx-auto">
-                        <div className="reviews__item">
-                            <div className="reviewer_info row">
-                                <div className="reviewer_info__name col-3">Денис Дячук</div>
-                                <div className="reviewer_info__city col-4">
-                                    Город: <span className="current_city">Ялта</span>
+                <div className="row col-12 mx-auto align-items-center reviews__video-wrapper">
+
+                    <div className="reviews__arrow left d-md-block d-none"></div>
+
+                    <div className="reviews-list col-md-10 mx-auto">
+                        <div className="reviews__arrow left d-md-none d-block"></div>
+                            <div className="reviews__item">
+                                <div className="reviewer_info mx-auto">
+                                    <div className="reviewer_info__name">Денис Дячук</div>
+                                    <div className="reviewer_info__city">
+                                        Город: <span className="current_city">Ялта</span>
+                                    </div>
+                                    <div className="reviewer_info__date">
+                                        Дата открытия: <span className="current_date">16.04.2021</span>
+                                    </div>
                                 </div>
-                                <div className="reviewer_info__date col-4">
-                                    Дата открытия: <span className="current_date">16.04.2021</span>
+                                <div className="reviewer__video main-video">
+                                    <img className="reviews__preview" src={require("../../assets/img/reviews/preview.png").default} />
+                                    <Play />
                                 </div>
                             </div>
-                            <div className="reviewer__video main-video">
-                                <img className="reviews__preview" src={require("../../assets/img/reviews/preview.png").default} />
-                                <Play />
-                            </div>
-                        </div>
+                        <div className="reviews__arrow right d-md-none d-block"></div>
                     </div>
-                    <div className="reviews__arrow right"></div>
+
+                    <div className="reviews__arrow right d-md-block d-none"></div>
+
                 </div>
                 
             </div>

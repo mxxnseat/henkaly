@@ -12,7 +12,7 @@ import { FacilityItem } from "./facilityItem";
 import { PopularyItem } from "./popularyItem";
 import { Count } from "./count";
 import { Button } from "../total/button";
-import { Carousel } from "./carousel";
+// import { Carousel } from "./carousel";
 
 
 
@@ -53,16 +53,16 @@ export function Digital(){
         },
     ];
 
-    const slides = [
-        require("../../assets/img/carousel/1.png").default,
-        require("../../assets/img/carousel/2.png").default,
-        require("../../assets/img/carousel/3.png").default,
-    ];
+    // const slides = [
+    //     require("../../assets/img/carousel/1.png").default,
+    //     require("../../assets/img/carousel/2.png").default,
+    //     require("../../assets/img/carousel/3.png").default,
+    // ];
     return (
         <section className="digital">
             <div className="container">
                 <div className="row">
-                    <div className="col-10">
+                    <div className="col-9">
                         <h2 className="heading col-12 pl-0">Хинкальные в цифрах</h2>
                         <div className="adress col-12 p-0">
                             <div className="adress-current row">
@@ -90,14 +90,18 @@ export function Digital(){
                             </div>
                             <Count />
                         </div>
-                        <div className="gallery">
+                        {/* <div className="gallery">
                             <div className="digital__heading col-12">Фотогалерея</div>
 
                             <Carousel slides={slides} />
-                        </div>
+                        </div> */}
                         <Button Class="mx-auto">Получить фин. модель</Button>
                     </div>
                 </div>
+            </div>
+
+            <div className="digital__map" id="map">
+                <img src={require("../../assets/img/tmp_yandex_map.png").default} alt="" />
             </div>
         </section>
     )

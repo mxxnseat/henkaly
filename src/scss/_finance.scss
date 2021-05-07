@@ -132,12 +132,57 @@
             line-height: 140%;
         }
         &-item{
-            margin-top: 48px;
+            margin-top: 30px;
 
             .tab__item-text,
             .tab__item-heading{
                 color: $white;
             }
+        }
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 540px){
+    .finance{
+        background-image: none;
+
+        &__model,
+        &__stage{
+            min-height: 874px;
+        }
+        &__stage{
+            padding-left: 0 !important;
+
+            &-process{
+                max-width: 350px;
+                margin-right: auto;
+                font-size: 16px;
+                margin-left: auto;
+            }
+            &-process_wrap{
+                max-width: 350px;
+                margin: 0 auto;
+                margin-bottom: 94px;
+            }
+        }
+        &__model{
+            background-color: $darkBlue;
+
+            &-period{
+                font-size: 16px;
+            }
+            .tab__item-text{
+                font-size: 16px;
+            }
+            .tab__item-heading{
+                font-size: 24px;
+            }
+        }
+        .heading{
+            max-width: 300px;
+            margin: 0 auto;
+            margin-bottom: 30px;
         }
     }
 }
