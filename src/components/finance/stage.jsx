@@ -1,4 +1,4 @@
-export function Stage(){
+export function Stage() {
     const stageList = [
         {
             text: 'Подготовка юр. лица: ИП или ООО'
@@ -30,28 +30,28 @@ export function Stage(){
     ];
 
     return (
-        <div className="col-6 finance__stage pt-5 pb-5">
+        <div className="col-12 col-md-6 finance__stage pt-5">
             <h2 className="heading">
                 <div className="text_select-red">
-                Этапы
+                    Этапы
                 </div>взаимодействия
             </h2>
             <div className="finance__stage-process">Как будет строится процесс развертывания нашей франшизы.</div>
             <div className="finance__stage-process_wrap">
                 {
-                    stageList.map((stage, index)=>{
+                    stageList.map((stage, index) => {
                         return (
                             <div className="finance__stage-item" key={index}>
                                 <span className="marker"></span>
 
-                                <div className="stage-number">Этап {index+1}</div>
+                                <div className="stage-number">Этап {index + 1}</div>
                                 <div className="stage-text">{stage.text}</div>
                             </div>
                         )
                     })
                 }
             </div>
-            
+
         </div>
     )
 }

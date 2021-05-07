@@ -86,3 +86,28 @@
         }
     }
 }
+
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .treasure{
+        .heading{
+            text-align: center;
+            max-width: 315px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .subhead{
+            max-width: 315px;
+        }
+        &__list-item:before{
+            width: 318px;
+            height: 102px;
+            left: -57px;
+            top: -12px;
+        }
+        &__item{
+            max-width: 315px;
+        }
+    }
+}

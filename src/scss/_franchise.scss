@@ -103,3 +103,39 @@
         }
     }
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+    .franchise{
+        .container{
+            max-width: 350px;
+        }
+        .subhead{
+            font-size: 16px;
+        }
+        &__item{
+
+            &:nth-child(2n),
+            &:nth-child(5){
+                margin-left: 0;
+                margin-bottom: 60px;
+            }
+
+            margin: 0;
+            &:not(:last-child){
+            margin-bottom: 120px;
+
+            }
+        }
+        &__number{
+            left: initial;
+            right: 14px;
+        }
+        &__slogan{
+            font-size: 12px;
+        }
+        &__heading{
+            font-size: 30px;
+        }
+    }
+}

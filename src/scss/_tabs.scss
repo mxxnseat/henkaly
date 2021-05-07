@@ -1,7 +1,6 @@
   .tabs{
       max-width: 350px;
   }
-
   .tab__item{
         display: flex;
         align-items: center;
@@ -11,7 +10,7 @@
         border: 1px solid $red;
         margin-bottom: 15px;
         max-width: 350px;
-
+        min-width: 330px;
         &.active{
             background-color: $yellow;
             border: none;
@@ -46,3 +45,17 @@
         line-height: 140%;
         color: $grey;
     }
+
+@media screen and (max-width: 1200px){
+    .tab__item{
+        &-heading{
+            font-size: 20px;
+        }
+        &-text{
+            font-size: 12px;
+        }
+    }
+    .tab__memo{
+        margin: 15px 0 30px 0;
+    }
+}

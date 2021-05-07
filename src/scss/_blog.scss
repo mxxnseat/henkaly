@@ -85,3 +85,32 @@
         background-position: top, bottom;
     }
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 540px){
+    .blog{
+        .heading{
+            margin-top: 60px;
+            margin-bottom: 15px;
+        }
+        .subhead{
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        &__video-list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__video-item{
+            width: 100%;
+            max-width: 350px;
+            height: 180px;
+        }
+        .video-preview_content{
+            font-size: 12px;
+            padding: 7px 0;
+            padding-left: 12px;
+        }
+    }
+}

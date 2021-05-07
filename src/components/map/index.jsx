@@ -22,9 +22,11 @@ export function HenkaliMap(){
                     <h2 className="heading">
                         <span className="text_select-red">Старик Хинкалыч</span> на карте России
                     </h2>
-
+                    <div className="subhead d-md-none d-block">
+                    Используйте схему для навигации по карте России.
+                    </div>
                     <div className="row col-12">
-                        <div className="perspective_city col-3">
+                        <div className="perspective_city col-3 d-md-block d-none">
                             <div className="perspective_city__heading">Перспективные города:</div>
 
                             <div className="perspective_city__list">
