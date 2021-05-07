@@ -55,7 +55,7 @@ export function Header() {
                     </div>
                     <div className="tabs col-12 col-sm-7 col-xl-4">
                         {tabsContent.map((tab,index)=><Tab {...tab} key={index} index={index} />)}
-                        <div className="tab__memo col-12 col-xl-12">
+                        <div className="tab__memo col-xl-12">
                             * Результат может отличаться в каждом индивидуальном (отдельном) случае.
                         </div>
                     </div>

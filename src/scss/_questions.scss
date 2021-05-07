@@ -57,3 +57,28 @@
         }
     }
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 540px){
+    .questions{
+        &__list{
+            max-width: 315px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &__item{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            &-heading{
+                font-size: 18px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        &__more{
+            margin-top: 60px;
+            margin-bottom: 530px;
+        }
+    }
+}

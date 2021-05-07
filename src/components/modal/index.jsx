@@ -28,7 +28,7 @@ export function FeedBackModal() {
                 </div>
 
                 <div className="feedback_modal__form mx-auto row col-12 p-0">
-                    <div className="col-12 row flex-nowrap p-0 mx-auto">
+                    <div className="col-md-12 row flex-md-nowrap p-0 mx-auto feedback_modal__input-wrap">
                         <input type="text" className="feedback_modal__input" placeholder="Имя" />
                         <input type="text" className="feedback_modal__input" placeholder="E-mail" />
                         <input type="text" className="feedback_modal__input" placeholder="Телефон" />
@@ -44,7 +44,7 @@ export function FeedBackModal() {
                         </label>
                     </div>
 
-                    <div className="row col-8 justify-content-between align-items-center p-0 mx-auto">
+                    <div className="row col-md-8 justify-content-between submit-wrapper align-items-center p-0 mx-auto">
                         <a href="#whatsapp" className="social wa">
                             WhatsApp
                         </a>

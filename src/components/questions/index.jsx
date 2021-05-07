@@ -42,15 +42,15 @@ export function Questions(){
     return (
         <section className="questions">
             <div className="container row mx-auto pt-5 px-0">
-                <h2 className="heading col-7 p-0">
+                <h2 className="heading col-md-7 p-0">
                     Как <span className="text_select-red">открыть хинкальную</span> в вашем городе?
                 </h2>
-                <div className="subhead col-12 p-0">
+                <div className="subhead col-md-12 p-0">
                     Часто задаваемые вопросы по франшизе и ответы на них.
                 </div>
 
 
-                <div className="questions__list col-12 p-0">
+                <div className="questions__list col-md-12 p-0">
                     {
                         questionsList.map(question=>{
                             return <QuestionItem key={question.heading} {...question} />
@@ -58,13 +58,13 @@ export function Questions(){
                     }
                 </div>
 
-                <div className="questions__more col-6 p-0 ml-auto">
+                <div className="questions__more col-md-6 p-0 ml-auto">
                     <h2 className="heading">
                         Хотите узнать <span className="text_select-red">больше?</span>
                     </h2>
                     <div className="subhead mb-5">Не нашли нужную информацию? Задайте вопрос.</div>
 
-                    <Button>Задать вопрос</Button>
+                    <Button Class="mx-auto mx-md-0">Задать вопрос</Button>
                 </div>
             </div>
         </section>
