@@ -62,31 +62,31 @@ export function Digital(){
         <section className="digital">
             <div className="container">
                 <div className="row">
-                    <div className="col-9">
-                        <h2 className="heading col-12 pl-0">Хинкальные в цифрах</h2>
-                        <div className="adress col-12 p-0">
+                    <div className="col-md-9">
+                        <h2 className="heading col-md-12 pl-0">Хинкальные в цифрах</h2>
+                        <div className="adress col-md-12 p-0">
                             <div className="adress-current row">
-                                <div className="adress-current__city col-3">Симферополь</div>
-                                <div className="adress-current__street ">ул. Турецкая 25</div>
+                                <div className="adress-current__city col-md-3 col-6">Симферополь</div>
+                                <div className="adress-current__street">ул. Турецкая 25</div>
                             </div>
                         </div>
-                        <div className="facility mx-auto col-12 row">
+                        <div className="facility mx-auto col-md-12 row">
                             {
                                 facilityDigitals.length ? facilityDigitals.map(digits=><FacilityItem key={digits.header} {...digits} />) : ''
                             }
                         </div>
-                        <div className="populary col-12">
+                        <div className="populary col-md-12">
                             <div className="digital__heading col-12">Популярный ассортимент</div>
-                            <div className="populary-list row сol-12">
+                            <div className="populary-list row сol-md- 12">
                                 {
                                     popularyGoods.length ? popularyGoods.map(good=><PopularyItem key={good.header}{...good}/>): ''
                                 }
                             </div>
                         </div>
-                        <div className="count col-12 pl-0">
+                        <div className="count col-md-12 pl-0">
                             <div className="row align-items-center pl-0">
-                                <div className="digital__heading col-3">Счетчик хинкали</div>
-                                <div className="digital__sub-heading col-9">Уже сварено и съедено</div>
+                                <div className="digital__heading col-md-3 col-6">Счетчик хинкали</div>
+                                <div className="digital__sub-heading col-md-9 col-6">Уже сварено и съедено</div>
                             </div>
                             <Count />
                         </div>
@@ -100,7 +100,7 @@ export function Digital(){
                 </div>
             </div>
 
-            <div className="digital__map" id="map">
+            <div className="digital__map d-none d-md-block" id="map">
                 <img src={require("../../assets/img/tmp_yandex_map.png").default} alt="" />
             </div>
         </section>

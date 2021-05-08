@@ -45,7 +45,7 @@ export function Header() {
                                 </span><br />
                                 в России
                             </h1>
-                        <div className="header__content-text">
+                        <div className="header__content-text mx-auto mx-md-0">
                             Открой хинкальную с доставкой в своем городе!
                             </div>
 
@@ -53,9 +53,9 @@ export function Header() {
                             получить бизнес план
                         </Button>
                     </div>
-                    <div className="tabs col-12 col-sm-7 col-xl-4">
+                    <div className="tabs col-12 col-sm-7 col-xl-4 p-0">
                         {tabsContent.map((tab,index)=><Tab {...tab} key={index} index={index} />)}
-                        <div className="tab__memo col-xl-12">
+                        <div className="tab__memo col-xl-12 p-0">
                             * Результат может отличаться в каждом индивидуальном (отдельном) случае.
                         </div>
                     </div>

@@ -1,11 +1,6 @@
 import { Button } from "../total/button";
 
 export function FeedBackModal() {
-    const getList = [
-        "Подробную презентацию о франшизе «Старик Хинкалыч»",
-        "Индивидуальную финансовую модель франшизы"
-    ]
-
 
     return (
         <div className="col-12 feedback_modal">
@@ -15,16 +10,17 @@ export function FeedBackModal() {
                 </h2>
 
                 <div className="feedback_modal__getlist">
-                    {
-                        getList.map((text, index) => {
-                            return (
-                                <div key={index} className="feedback_modal__get-item">
-                                    <div className="number">{index + 1}</div>
-                                    <div className="text">{text}</div>
-                                </div>
-                            )
-                        })
-                    }
+                    <div className="feedback_modal__get-item">
+                        <div className="number">1</div>
+                        <div className="text">Подробную презентацию о франшизе «Старик Хинкалыч»</div>
+                    </div>
+
+                    <div className="feedback_modal__get-arrow"></div>
+
+                    <div className="feedback_modal__get-item">
+                        <div className="number">2</div>
+                        <div className="text">Индивидуальную финансовую модель франшизы</div>
+                    </div>
                 </div>
 
                 <div className="feedback_modal__form mx-auto row col-12 p-0">
@@ -39,7 +35,7 @@ export function FeedBackModal() {
                             <input type="checkbox" className="hidden_checkbox" id="privacy" />
                             <span className="feedback_modal__form-checkbox"></span>
                             <span>
-                            Отправляя данные с этой формы, Вы принимаете <a href="#" className="text_select-red">условия политики конфиденциальности</a>
+                                Отправляя данные с этой формы, Вы принимаете <a href="#" className="text_select-red">условия политики конфиденциальности</a>
                             </span>
                         </label>
                     </div>

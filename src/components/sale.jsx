@@ -10,7 +10,7 @@ export function Sale(props){
 
 
                 <div className="row h-100">
-                    <div className="sale__text col-9 col-xl-6" >
+                    <div className="sale__text col-md-6" >
                         СКИДКА 20 000 ₽ за прохождение теста на тему:<br />
                         Какой формат франшизы «Старик Хинкалыч» тебе подходит?
                     </div>

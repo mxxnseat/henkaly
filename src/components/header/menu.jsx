@@ -12,7 +12,7 @@ export function Menu(){
             <div className="logo-wrap col-3 p-0">
                 <img src={logo} className="logo" alt="Логотип" />
             </div>
-            <nav className="navigation col-5">
+            <nav className="navigation col-5 d-none d-md-flex">
                 <a href="" className="navigation__link">Концепция</a>
                 <a href="" className="navigation__link">Команда</a>
                 <a href="" className="navigation__link">Условия</a>
