@@ -38,7 +38,12 @@
             letter-spacing: .02em;
             color: #666;
             font-family: $text;
-
+            span{
+                font-family: $text;
+                font-size: 18px;
+                line-height: 140%;
+                letter-spacing: 0.02em;
+            }
             span a{
                 text-decoration: underline;
 
@@ -96,7 +101,14 @@
         margin-top: 60px;
         display: flex;
         justify-content: space-between;
-        position: relative;
+        align-items: center;
+    }
+    &__get-arrow{
+        width: 35px;
+        height: 30px;
+        background-image: url("../assets/img/icons/arrow_green.svg");
+        background-size: containt;
+        background-repeat: no-repeat;
     }
     &__get-item{
         display: flex;
@@ -106,20 +118,6 @@
         border: 3px solid $green;
         border-radius: 15px;
         align-items: center;
-
-        &:first-child:after{
-            content: '';
-            display: block;
-            width: 35px;
-            height: 30px;
-            background-image: url("../assets/img/icons/arrow_green.svg");
-            background-size: containt;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
 
         .number{
             color: $green;
@@ -161,11 +159,9 @@
             .text{
                 font-size: 16px;
             }
-            &:first-child:after{
-                transform: rotate(90deg);
-                left: 41%;
-                top: 44%;
-            }
+        }
+        &__get-arrow{
+            transform: rotate(90deg);
         }
         &__form{
             margin-top: 30px;
@@ -201,15 +197,14 @@
             display: grid;
             
             grid-template-columns: repeat(8, 40px);
-            grid-template-rows: repeat(4, 32px);
-            row-gap: 17px;
-
+            grid-template-rows: repeat(20, 8px);
             .button{
                 grid-column: 1/9;
-                grid-row: 1/2;
+                grid-row: 1/9;
             }
             .social{
-                grid-row: 3/4;
+                grid-row: 14/20;
+                min-height: 72px;
 
                 &.wa{
                     grid-column: 2/3;

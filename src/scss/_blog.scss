@@ -101,10 +101,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 145px;
         }
         &__video-item{
             width: 100%;
-            max-width: 350px;
+            max-width: 315px;
+            max-height: 177px;
             height: 180px;
         }
         .video-preview_content{

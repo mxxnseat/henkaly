@@ -43,7 +43,7 @@ export function Questions(){
         <section className="questions">
             <div className="container row mx-auto pt-5 px-0">
                 <h2 className="heading col-md-7 p-0">
-                    Как <span className="text_select-red">открыть хинкальную</span> в вашем городе?
+                    Как <span className="text_select-red">открыть хинкальную</span><br/> в вашем городе?
                 </h2>
                 <div className="subhead col-md-12 p-0">
                     Часто задаваемые вопросы по франшизе и ответы на них.

@@ -74,9 +74,6 @@
 
 @media screen and (max-width: 1200px){
     .header{
-        .navigation{
-            display: none;
-        }
         .social{
             justify-content: flex-end;
             &__link{
@@ -95,6 +92,7 @@
             font-family: $text;
             text-align: center;
             margin: 8px 0 30px 0;
+            max-width: 315px;
         }
         &_content-wraper{
             flex-direction: column;

@@ -5,13 +5,10 @@ export function HenkaliIs(){
                 <div className="row pt-5 pb-5">
                     <div className="col-12 col-md-7">
                         <h2 className="heading">
-                            <span className="text_select-red">
-                                Хинкальные
-                            </span>    
-                        – что это?
+                            <span className="text_select-red">Хинкальные </span>– что это?
                         </h2>
 
-                        <div className="content col-md-8 col-10 pl-0">
+                        <div className="content col-md-8 col-xl-10 pl-0">
                             <div className="content__text">
                                 Небольшие душевные кафе грузинской кухни.<br/>
                                 <b>Основной продукт — хинкали.</b>
@@ -23,7 +20,7 @@ export function HenkaliIs(){
                                 и демократичной ценой.
                             </div>
                         </div>
-                        <div className="content_border frame-content col-md-10 col-12">
+                        <div className="content_border frame-content col-md-10 col-xl-12">
                             <h4 className="heading">
                                 Хинкальные — это <span className="text_select-red">идеальное решение</span> запроса потребителей 
                                 в общепите, когда важна цена 

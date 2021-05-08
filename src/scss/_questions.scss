@@ -61,6 +61,10 @@
 
 @media screen and (min-width: 320px) and (max-width: 540px){
     .questions{
+        .container{
+            background-size: auto 494px;
+            background-position-x: center;
+        }
         &__list{
             max-width: 315px;
             margin: 0 auto;
@@ -73,12 +77,19 @@
                 font-size: 18px;
                 padding-left: 0;
                 padding-right: 0;
+
+                &__text{
+                    max-width: 261px;
+                }
             }
         }
-
         &__more{
             margin-top: 60px;
-            margin-bottom: 530px;
+            margin-bottom: 220px;
+        }
+
+        .button{
+            margin-bottom: 15px;
         }
     }
 }
