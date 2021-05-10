@@ -2,9 +2,14 @@
     background-image: url("../assets/img/digital_bg.png");
     min-height: 1325px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     position: relative;
     overflow: hidden;
+
+    
+    .button{
+        margin-bottom: 150px;
+    }
 
     &__map{
         position: absolute;

@@ -20,6 +20,8 @@
 @import "./feedback";
 @import "./modal";
 @import "./footer";
+@import "./popup_modal";
+@import "./popup_menu";
 
 *{
     box-sizing: border-box;
@@ -32,6 +34,11 @@ body{
 }
 html,body{
     overflow-x: hidden
+}
+html{
+    &#popup{
+        overflow-y: hidden;
+    }
 }
 h1,h2,h3,h4,h5,h6{
     font-family: $heading;

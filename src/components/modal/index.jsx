@@ -1,10 +1,18 @@
+import { useDispatch } from "react-redux";
 import { Button } from "../total/button";
 
-export function FeedBackModal() {
+import {modalAction} from "../../store/actions/modal";
+
+export function FeedBackModal(props) {
+    const dispatch = useDispatch();
 
     return (
         <div className="col-12 feedback_modal">
-            <div className="col-10 mx-auto">
+            {
+                props.popup ? <div className="modal_close  d-none d-md-block" onClick={()=>dispatch(modalAction())}><img src={require("../../assets/img/close.svg").default} alt="Закрыть модальное окно" /></div> : ''
+            }
+
+            <div className="col-10 mx-auto feedback_modal__wrap">
                 <h2 className="heading">
                     <span className="text_select-red">Заполните форму</span> и получите
                 </h2>
