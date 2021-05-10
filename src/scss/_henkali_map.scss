@@ -115,13 +115,13 @@
             padding: 0 !important;
 
             img{
-                max-width: 315px;
-                max-height: 496px;
+                height: 100%;
                 object-fit: contain;
+                max-height: 497px;
             }
 
             .map_part{
-                margin: 0 !important;
+                margin: 0 auto !important;
             }
         }
         &__legend{
@@ -140,7 +140,7 @@
         }
         &__map{
             min-height: 631px;
-
+            padding: 0 !important;
             flex-wrap: nowrap;
             max-width: 315px;
             overflow: hidden;
