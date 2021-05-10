@@ -1,0 +1,87 @@
+
+.modal_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0, .3);
+    z-index: 99999;
+}
+.modal_close{
+    cursor: pointer;
+    
+    position: absolute;
+    opacity: .5;
+    top: 36px;
+    right: 36px;
+    transition: .1s ease;
+    z-index: 2;
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px){
+    .modal_wrap__header{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background: #fff;
+        z-index: 999999;
+        padding: 10px 0;
+
+
+        .logo.mob{
+            height: 70px;
+            display: block;
+            margin: 0 auto;
+        }
+        .modal_close-wrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            .modal_close.mob{
+                position: static;
+            }
+        }
+    }
+
+    .modal_wrap{
+        background: #fff;
+
+        .feedback_modal{
+            overflow-y: scroll;
+            max-height: 100vh;
+            padding: 140px 0 90px 0;
+            
+
+            
+
+            &:after{
+                content: '';
+                background: url("../assets/img/henkaly_bg.png");
+                background-position: 0px 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                opacity: .5;
+            }
+        }
+        .container{
+            padding: 0 !important;
+        }
+    }
+}

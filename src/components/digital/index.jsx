@@ -1,4 +1,3 @@
-
 //digits
 import metrs from "../../assets/img/facility/m2.png";
 import checkue from "../../assets/img/facility/сheckue.svg";
@@ -12,8 +11,8 @@ import { FacilityItem } from "./facilityItem";
 import { PopularyItem } from "./popularyItem";
 import { Count } from "./count";
 import { Button } from "../total/button";
-// import { Carousel } from "./carousel";
 
+import {Carousel} from './carousel';
 
 
 export function Digital(){
@@ -52,12 +51,13 @@ export function Digital(){
             percent: "40%"
         },
     ];
+    const slides = [
+        <img  src={require("../../assets/img/carousel/1.png").default} alt="1" />,
+        <img src={require("../../assets/img/carousel/2.png").default} alt="2" />,
+        <img src={require("../../assets/img/carousel/2.png").default} alt="2" />,
+        <img src={require("../../assets/img/carousel/2.png").default} alt="2" />,
+        <img  src={require("../../assets/img/carousel/3.png").default} alt="3" />];
 
-    // const slides = [
-    //     require("../../assets/img/carousel/1.png").default,
-    //     require("../../assets/img/carousel/2.png").default,
-    //     require("../../assets/img/carousel/3.png").default,
-    // ];
     return (
         <section className="digital">
             <div className="container">
@@ -90,11 +90,10 @@ export function Digital(){
                             </div>
                             <Count />
                         </div>
-                        {/* <div className="gallery">
-                            <div className="digital__heading col-12">Фотогалерея</div>
-
+                        
+                        <div className="carousel-wrap">
                             <Carousel slides={slides} />
-                        </div> */}
+                        </div>
                         <Button Class="mx-auto">Получить фин. модель</Button>
                     </div>
                 </div>

@@ -2,8 +2,11 @@
     padding: 90px 0;
     background-color: $white;
     border-radius: 30px;
-    backdrop-filter: blur(128.067px);
+    position: relative !important;
 
+    &__wrap{
+        z-index: 2;
+    }
     &__form{
         display: flex;
         justify-content: space-between;
