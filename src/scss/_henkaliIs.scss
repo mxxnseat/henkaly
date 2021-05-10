@@ -9,6 +9,10 @@
             font-family: $text;
         }
     }
+
+    .content_border{
+        max-width: 540px;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){

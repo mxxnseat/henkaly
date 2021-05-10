@@ -1,10 +1,61 @@
-import { Play } from "../total/play_button";
+import { useState } from "react";
+import { ReviewsItem } from "./reviewsItem";
 
 
 export function Reviews(){
+    const slides = [
+        {
+            name: "Денис Дячук",
+            city: "Ялта",
+            date: "16.04.2021",
+            preview: require("../../assets/img/reviews/preview.png").default
+        },
+        {
+            name: "Денис Дячук",
+            city: "Ялта",
+            date: "16.04.2021",
+            preview: require("../../assets/img/reviews/preview.png").default
+        },
+        {
+            name: "Денис Дячук",
+            city: "Ялта",
+            date: "16.04.2021",
+            preview: require("../../assets/img/reviews/preview.png").default
+        },
+        {
+            name: "Денис Дячук",
+            city: "Ялта",
+            date: "16.04.2021",
+            preview: require("../../assets/img/reviews/preview.png").default
+        },
+    ];
+    const [offset, setOffset] = useState(0);
+    let [currentSlide, setSlide] = useState(0);
+    const slidesCount = slides.length;
+
+    const nextSlide = ()=>{
+        const width = document.querySelector(".reviews__item").clientWidth;
+        ++currentSlide;
+        if(currentSlide>=slidesCount){
+            currentSlide = 0;
+        }
+        setOffset(-width*currentSlide);
+        setSlide(currentSlide);
+    }
+
+    const prevSlide = ()=>{
+        const width = document.querySelector(".reviews__item").clientWidth;
+        --currentSlide;
+        if(currentSlide<0){
+            currentSlide = slidesCount-1;
+        }
+        setOffset(-width*currentSlide);
+        setSlide(currentSlide);
+    }
+
     return (
         <section className="reviews">
-            <div className="container pt-5 pb-5 row mx-auto">
+            <div className="container p-0 pt-5 pb-5 row mx-auto">
                 <h2 className="heading">
                     <span className="text_select-red">Что говорят</span> наши франчайзи?
                 </h2>
@@ -12,29 +63,21 @@ export function Reviews(){
 
                 <div className="row col-12 mx-auto align-items-center reviews__video-wrapper">
 
-                    <div className="reviews__arrow left d-md-block d-none"></div>
+                    <div onClick={prevSlide} className="reviews__arrow left d-md-block d-none"></div>
 
-                    <div className="reviews-list col-md-10 mx-auto">
-                        <div className="reviews__arrow left d-md-none d-block"></div>
-                            <div className="reviews__item">
-                                <div className="reviewer_info mx-auto">
-                                    <div className="reviewer_info__name">Денис Дячук</div>
-                                    <div className="reviewer_info__city">
-                                        Город: <span className="current_city">Ялта</span>
-                                    </div>
-                                    <div className="reviewer_info__date">
-                                        Дата открытия: <span className="current_date">16.04.2021</span>
-                                    </div>
-                                </div>
-                                <div className="reviewer__video main-video">
-                                    <img className="reviews__preview" src={require("../../assets/img/reviews/preview.png").default} />
-                                    <Play />
-                                </div>
+                    <div className="reviews-list p-0 col-md-10 mx-auto">
+                        <div onClick={prevSlide} className="reviews__arrow left d-md-none d-block"></div>
+
+                            <div className="reviews-list__lenta" style={{transform: `translateX(${offset}px)`}}>
+                                {
+                                    slides.map((slide,index)=><ReviewsItem key={index} {...slide} />)
+                                }
                             </div>
-                        <div className="reviews__arrow right d-md-none d-block"></div>
+                            
+                        <div onClick={nextSlide} className="reviews__arrow right d-md-none d-block"></div>
                     </div>
 
-                    <div className="reviews__arrow right d-md-block d-none"></div>
+                    <div onClick={nextSlide} className="reviews__arrow right d-md-block d-none"></div>
 
                 </div>
                 
