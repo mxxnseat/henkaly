@@ -11,6 +11,17 @@
     .reviewer__video{
         position: relative;
     }
+    &-list{
+        overflow: hidden;
+        &__lenta{
+            transition: .45s ease;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+    &__item{
+        min-width: 100%;
+    }
     .reviewer_info{
         margin-bottom: 30px;
         justify-content: space-between;
@@ -88,6 +99,7 @@
     .reviews{
         .reviewer_info{
             max-width: 350px;
+            margin-bottom: 0px;
             margin-top: 30px;
             align-items: center;
             justify-content: center;
@@ -115,21 +127,21 @@
             }
         }
         &__item{
-            width: 100%;
+            max-width: 350px;
             display: flex;
             flex-direction: column-reverse;
-            grid-column: 1/8;
-            grid-row: 1/7;
+            justify-content: space-between;
+            min-width: 315px;
         }
+        
         .reviewer__video{
             width: 100%;
-            max-width: 350px;
+            max-width: 315px;
         }
         &-list{
-            display: grid;
-            max-width: 350px;
-            grid-template-columns: repeat(8, 48px);
-            grid-template-rows: repeat(6, 50px);
+            overflow: hidden;
+            position: relative;
+            max-width: 315px;
         }
         &__arrow{
             min-width: 48px;
@@ -137,13 +149,16 @@
 
             max-width: 48px;
             max-height: 48px;
-            grid-row: 5/7;
+
+            position: absolute;
+            bottom: 12px;
+            z-index: 999999;
 
             &.left{
-                grid-column: 1/2;
+                left: 0;
             }
             &.right{
-                grid-column: 7/8;
+                right: 0;
             }
         }
     }

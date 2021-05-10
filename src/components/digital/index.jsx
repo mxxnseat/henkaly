@@ -13,7 +13,10 @@ import { Count } from "./count";
 import { Button } from "../total/button";
 
 import {Carousel} from './carousel';
+import { AdressItem } from "./adressItem";
+import {YaMap} from "./yamaps";
 
+import { useState } from "react";
 
 export function Digital(){
     const facilityDigitals = [
@@ -34,6 +37,131 @@ export function Digital(){
         }
     ];
 
+    const adressList = [
+        {
+            city: 'Симферополь',
+            street: 'ул. Киевская 189',
+            shoppingCenter: 'ТЦ «Южная галерея»',
+            cord: [44.985142, 34.086573]
+        },
+        {
+            city: 'Симферополь',
+            street: 'ул. Турецкая, д. 25',
+            shoppingCenter: 'ТЦ «Южная галерея»',
+            cord: [44.945150, 34.099940]
+        },
+        {
+            city: 'Севастополь',
+            street: 'ул. 6-я бастионная, д. 42',
+            shoppingCenter: '',
+            cord: [44.603629, 33.513349]
+        },
+        {
+            city: 'Севастополь',
+            street: 'ул. Вакуленчука, д. 29',
+            shoppingCenter: 'трц «муссон»',
+            cord: [44.585412, 33.486005]
+        },
+        {
+            city: 'Бахчисарай',
+            street: 'ул. Симферопольская, д. 5-а',
+            shoppingCenter: '',
+            cord: [44.755579, 33.856335]
+        },
+        {
+            city: 'Алушта',
+            street: 'ул. Набережная, д. 18',
+            shoppingCenter: 'трц «муссон»',
+            cord: [44.653498, 34.403014]
+        },
+        {
+            city: 'Симферополь',
+            street: 'ул. Киевская, д.189',
+            shoppingCenter: 'ТЦ «Южная галерея»',
+            cord: [44.985142, 34.086573]
+        },
+        {
+            city: 'Симферополь',
+            street: 'ш. Евпаторийское, д. 8',
+            shoppingCenter: 'ТЦ «Меганом»',
+            cord: [44.971128, 34.076988]
+        },
+        {
+            city: 'Евпатория',
+            street: 'ул. Интернациональная, д.130',
+            shoppingCenter: '',
+            cord: [45.200493, 33.344673]
+        },
+        {
+            city: 'Керчь',
+            street: 'ул. Ленина, д.23',
+            shoppingCenter: '',
+            cord: [45.354591, 36.471385]
+        },
+        {
+            city: 'Симферополь',
+            street: 'ул. Пушкина, д.11',
+            shoppingCenter: '',
+            cord: [44.950623, 34.098000]
+        },
+        {
+            city: 'Ялта',
+            street: 'ул. Игнатенко, д.20',
+            shoppingCenter: '',
+            cord: [44.496193, 34.173243]
+        },
+        {
+            city: 'Курск',
+            street: 'ул. Ленина, д.12',
+            shoppingCenter: '',
+            cord: [51.733675, 36.192503]
+        },
+        {
+            city: 'Курск',
+            street: 'ул. Карла маркса, д.6',
+            shoppingCenter: '',
+            cord: [51.748950, 36.191721]
+        },
+        {
+            city: 'Кострома',
+            street: 'ул. Советская, д.2',
+            shoppingCenter: '',
+            cord: [57.765398, 40.931727]
+        },
+        {
+            city: 'Феодосия',
+            street: 'ул, федько, 4',
+            shoppingCenter: '',
+            cord: [45.041445, 35.378378]
+        },
+        {
+            city: 'Курск',
+            street: 'ул. Студенческая, д. 1',
+            shoppingCenter: 'ТЦ "Eвропа 40"',
+            cord: [51.741700, 36.145773]
+        },
+        {
+            city: 'Самара',
+            street: 'ул. Аэродромная, д.47а',
+            shoppingCenter: 'ТРК "Аврора Молл"',
+            cord: [53.191368, 50.189800]
+        },
+        {
+            city: 'Ижевск',
+            street: 'ул. Пушкинская, д.252',
+            shoppingCenter: '',
+            cord: [56.859527, 53.210287]
+        }
+    ];
+    const [currentAdress, setCurrentAdress] = useState(adressList[0]);
+    const [showList, setShowList] = useState(false);
+    const currentAdressHandler = (adress)=>{
+        setCurrentAdress(adress);
+        setShowList(false);
+    }
+    const adressPopupHandler = (e)=>{
+        setShowList(showList ? false : true);
+    }
     const popularyGoods = [
         {
             img: henkali,
@@ -52,12 +180,14 @@ export function Digital(){
         },
     ];
     const slides = [
-        <img  src={require("../../assets/img/carousel/1.png").default} alt="1" />,
+        <img src={require("../../assets/img/carousel/1.png").default} alt="1" />,
         <img src={require("../../assets/img/carousel/2.png").default} alt="2" />,
         <img src={require("../../assets/img/carousel/2.png").default} alt="2" />,
         <img src={require("../../assets/img/carousel/2.png").default} alt="2" />,
-        <img  src={require("../../assets/img/carousel/3.png").default} alt="3" />];
+        <img src={require("../../assets/img/carousel/3.png").default} alt="3" />];
 
+    
+    
     return (
         <section className="digital">
             <div className="container">
@@ -65,10 +195,18 @@ export function Digital(){
                     <div className="col-md-9">
                         <h2 className="heading col-md-12 pl-0">Хинкальные в цифрах</h2>
                         <div className="adress col-md-12 p-0">
-                            <div className="adress-current row">
-                                <div className="adress-current__city col-md-3 col-6">Симферополь</div>
-                                <div className="adress-current__street">ул. Турецкая 25</div>
+                            <div onClick={adressPopupHandler} className="adress-current row flex-nowrap">
+                                <div className="adress-current__city col-md-3 col-5">{currentAdress.city}</div>
+                                <div className="adress-current__street">{currentAdress.street}</div>
                             </div>
+
+                            {
+                                showList ? 
+                                <div className="adress__list">
+                                    {adressList.map((adress,index)=><AdressItem selectCallback={()=>currentAdressHandler(adress)} key={index} {...adress} />)}
+                                </div> : ''
+                            }
+                            
                         </div>
                         <div className="facility mx-auto col-md-12 row">
                             {
@@ -98,10 +236,9 @@ export function Digital(){
                     </div>
                 </div>
             </div>
-
-            <div className="digital__map d-none d-md-block" id="map">
-                <img src={require("../../assets/img/tmp_yandex_map.png").default} alt="" />
-            </div>
+            
+            <YaMap adresses={adressList} />
+            
         </section>
     )
 }

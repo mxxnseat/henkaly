@@ -10,7 +10,6 @@
     .button{
         margin-bottom: 150px;
     }
-
     &__map{
         position: absolute;
         right: 0;
@@ -105,13 +104,88 @@
         bottom: 0;
     }
     .adress{
-        cursor: pointer;
+        position: relative;
+
+        &__list{
+            min-height: 72px;
+            max-height: 435px;
+            width: 100%;
+            position: absolute;
+            overflow-y: scroll;
+            z-index: 9999;
+            background: #E0E0E0;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        &__item{
+            display: flex;
+            padding: 25px 16px;
+            cursor: pointer;
+            transition: .15s ease;
+            background: $white;
+            border-bottom: 2px solid #efefef;
+            align-items: center;
+
+            &:last-child{
+                border:none;
+            }
+
+            &:hover{
+                background: $red;
+
+                .adress__city{
+                    color: $white;
+
+                    &:before{
+                        background-image: url('../assets/img/icons/map_placemark_white.svg');
+                    }
+                }
+                .adress__street{
+                    color: $white;
+                    opacity: .5;
+                }
+            }
+        }
+        &__city,
+        &__street,
+        &__shopping-center{
+            font-family: $text_bold;
+            font-size: 22px;
+            line-height: 100%;
+            margin-left: 15px;
+        }
+
+        &__city{
+            color: $grey;
+            margin-left: 0;
+            display: flex;
+            align-items: center;
+
+            &:before{
+                content: '';
+                width: 14px;
+                height: 20px;
+                background-repeat: no-repeat;
+                display: inline-block;
+                background-size: contain;
+                margin-right: 16px;
+                background-image: url('../assets/img/map_placemark.svg');
+            }
+        }
+        &__street{
+            color: #ababab;
+        }
+        &__shopping-center{
+            color: #cccccc;
+        }
 
         &-current{
         border-bottom: 2px solid rgba(255,255,255,.25);
         padding-bottom: 19px;
         margin-top: 49px;
         align-items: center;
+        cursor: pointer;
+
             &::before{
                 content: '';
                 margin-left: 25px;
@@ -213,6 +287,29 @@
     .gallery{
         margin-bottom: 60px;
     }
+        
+        ::-webkit-scrollbar-track {
+            background-color:transparent;
+            border-radius: 6px;
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            border-radius: 6px;
+            background-color:#666666;
+        }
+        
+        ::-webkit-resizer{
+            background-image:url('');
+            background-repeat:no-repeat;
+            width:8px;
+            height:0px
+        }
+        
+        ::-webkit-scrollbar{
+            width: 8px;
+            border-radius: 6px;
+        }
 }
 
 @media screen and(min-width: 320px) and (max-width: 540px) {
@@ -224,6 +321,21 @@
             max-width: 315px;
             margin: 0 auto;
 
+            &__city{
+                font-size: 12px;
+                white-space: nowrap;
+            }
+            &__street,
+            &__shopping-center{
+                font-size: 10px;
+            }
+            &__street,
+            &__shopping-center,
+            &__city{
+                margin-left: 8px;
+                line-height: 140%;
+            }
+
             &-current{
                 padding-bottom: 18px;
 
@@ -232,6 +344,7 @@
                 }
                 &__street{
                     font-size: 12px;
+                    margin-right: 17px;
                 }
 
                 &::before{
