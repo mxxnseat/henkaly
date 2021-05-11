@@ -2,7 +2,7 @@ import "./scss/style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import React, { useState } from "react";
-import { useDispatch, useSelector} from "react-redux";
+import { useSelector} from "react-redux";
 
 import {Sale} from "./components/sale";
 import {Header} from "./components/header";
@@ -24,6 +24,9 @@ import { Footer } from "./components/footer";
 
 import { PopupModal } from "./components/popup_modal";
 import { PopupMenu } from "./components/popup_menu";
+
+import LazyLoad from "react-lazyload";
+
 
 function App() {
   const [saleVisibility, setSaleVisibility] = useState(true);
@@ -48,19 +51,41 @@ function App() {
         isPopup ? <PopupMenu /> : ''
       }
       <Header />
-      <Gallery />
-      <HenkaliIs />
-      <Facts />
-      <Digital />
-      <Treasure />
-      <Team />
-      <Franchise />
-      <Finance />
-      <YouGet />
-      <HenkaliMap />
-      <Blog />
-      <Reviews />
-      <Questions />
+
+      <LazyLoad offset="100">
+        <Gallery />
+      </LazyLoad>
+      
+      
+      <LazyLoad offset="100">
+        <HenkaliIs />
+      </LazyLoad>
+
+      <LazyLoad offset="100">
+        <Facts />
+      </LazyLoad>
+
+      <LazyLoad offset="100">
+        <Digital />
+      </LazyLoad>
+
+      <LazyLoad offset="100">
+        <Treasure />
+      </LazyLoad>
+
+      <LazyLoad offset="100">
+        <Team />
+      </LazyLoad>
+
+      <LazyLoad offset="100"><Franchise /></LazyLoad>
+      <LazyLoad offset="100"><Finance /></LazyLoad>
+      <LazyLoad offset="100"><YouGet /></LazyLoad>
+      <LazyLoad offset="100"><HenkaliMap /></LazyLoad>
+      <LazyLoad offset="100"><Blog /></LazyLoad>
+      <LazyLoad offset="100"><Reviews /></LazyLoad>
+      <LazyLoad offset="100"><Questions /></LazyLoad>
+
+      
       <Feedback />
       <Footer />
     </React.Fragment>
