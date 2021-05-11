@@ -3,9 +3,9 @@
     height: 100%;
     top:0;
     left: 0;
-    position: absolute;
+    position: fixed;
     background: $white;
-    z-index: 99999;
+    z-index: 999999;
 
     &__list{
         display: flex;
@@ -111,13 +111,13 @@
     }
 
     &:after{
-        background-image: url("../assets/img/digital_top-bg.png"), url("../assets/img/digital_top-bg_sub.png");
+        background-image: url("../assets/img/digital_top-bg_sub.svg"), url("../assets/img/digital_top-bg.svg");
         height: 85px;
         position: absolute;
         content: "";
         width: 100%;
         background-size: auto 16px, auto 69px;
-        background-repeat: no-repeat;
+        background-repeat: repeat no-repeat;
         background-position: top, bottom;
         bottom: 0;
     }

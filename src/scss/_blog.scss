@@ -71,8 +71,9 @@
         top: 0;
         width: 100%;
         height: 85px;
-        background: url("../assets/img/digital_top-bg.png"), url("../assets/img/digital_top-bg_sub.png");
-        background-repeat: no-repeat;
+        background: url("../assets/img/digital_top-bg.svg"), url("../assets/img/digital_top-bg_sub.svg");
+        background-repeat: repeat no-repeat;
+        background-position: left bottom, left top;
     }
     &:after{
         content: '';
@@ -80,9 +81,9 @@
         bottom: 0;
         width: 100%;
         height: 85px;
-        background: url("../assets/img/digital_top-bg_sub.png"), url("../assets/img/digital_top-bg.png");
-        background-repeat: no-repeat;
-        background-position: top, bottom;
+        background: url("../assets/img/digital_top-bg_sub.svg"), url("../assets/img/digital_top-bg.svg");
+        background-repeat: repeat no-repeat;
+        background-position: left bottom, left top;
     }
 }
 

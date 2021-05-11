@@ -1,10 +1,9 @@
 .franchise{
     &:after{
         content: '';
-        background-image: url("../assets/img/digital_top-bg_sub.png");
-        background-repeat: no-repeat;
+        background-image: url("../assets/img/digital_top-bg.svg");
+        background-repeat: repeat no-repeat;
         background-position-y: bottom;
-        background-size: cover;
         width: 100%;
         height: 69px;
         display: block;

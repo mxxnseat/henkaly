@@ -1,5 +1,4 @@
 import { Button } from "../total/button";
-import { Menu } from "./menu";
 import { Tab } from "../total/tab";
 
 import wallet from "../../assets/img/tab-wallet.svg";
@@ -34,7 +33,6 @@ export function Header() {
     return (
         <header className="header">
             <div className="container">
-                <Menu />
 
                 <div className="row header_content-wraper">
                     <div className="header__content col-xl-8 col-12">
