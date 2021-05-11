@@ -93,13 +93,13 @@
         z-index: 9999;
     }
     &::before{
-        background: url("../assets/img/digital_top-bg.png") 0 0 no-repeat,
-        url("../assets/img/digital_top-bg_sub.png") 0 0 no-repeat;
+        background: url("../assets/img/digital_top-bg_sub.svg") 0 0 repeat no-repeat,
+        url("../assets/img/digital_top-bg.svg") 0 0 repeat no-repeat;
         position: relative;
     }
     &::after{
-        background: url("../assets/img/digital_top-bg_sub.png") 0 0 no-repeat,
-        url("../assets/img/digital_top-bg.png") 0 bottom no-repeat;
+        background: url("../assets/img/digital_top-bg.svg") 0 0 repeat no-repeat,
+        url("../assets/img/digital_top-bg_sub.svg") 0 bottom repeat no-repeat;
         position: absolute;
         bottom: 0;
     }

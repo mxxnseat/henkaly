@@ -11,7 +11,7 @@ import whatsapp from "../../assets/img/icons/whatsapp.svg";
 export function Team() {
     return (
         <section className="team">
-            <div className="container pt-5">
+            <div className="container pt-5 px-0">
                 <div className="row mx-auto col-12 team_row">
                     <h2 className="heading">
                         Наша <span className="text_select-red">команда</span>

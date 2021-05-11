@@ -25,13 +25,15 @@ import { Footer } from "./components/footer";
 import { PopupModal } from "./components/popup_modal";
 import { PopupMenu } from "./components/popup_menu";
 
+import {Menu} from "./components/menu";
+
 import LazyLoad from "react-lazyload";
 
 
 function App() {
   const [saleVisibility, setSaleVisibility] = useState(true);
-  const isModal = useSelector((store)=>store.isModal);
-  const isPopup = useSelector((store)=>store.isPopup);
+  const isModal = useSelector((store)=>store.popup.isModal);
+  const isPopup = useSelector((store)=>store.popup.isPopup);
 
   if(isModal || isPopup){
     document.querySelector("html").setAttribute("id","popup");
@@ -50,40 +52,42 @@ function App() {
       {
         isPopup ? <PopupMenu /> : ''
       }
+      <Menu />
+
       <Header />
 
-      <LazyLoad offset="100">
+      <LazyLoad offset={100}>
         <Gallery />
       </LazyLoad>
       
       
-      <LazyLoad offset="100">
+      <LazyLoad offset={100}>
         <HenkaliIs />
       </LazyLoad>
 
-      <LazyLoad offset="100">
+      <LazyLoad offset={100}>
         <Facts />
       </LazyLoad>
 
-      <LazyLoad offset="100">
+      <LazyLoad offset={100}>
         <Digital />
       </LazyLoad>
 
-      <LazyLoad offset="100">
+      <LazyLoad offset={100}>
         <Treasure />
       </LazyLoad>
 
-      <LazyLoad offset="100">
+      <LazyLoad offset={100}>
         <Team />
       </LazyLoad>
 
-      <LazyLoad offset="100"><Franchise /></LazyLoad>
-      <LazyLoad offset="100"><Finance /></LazyLoad>
-      <LazyLoad offset="100"><YouGet /></LazyLoad>
-      <LazyLoad offset="100"><HenkaliMap /></LazyLoad>
-      <LazyLoad offset="100"><Blog /></LazyLoad>
-      <LazyLoad offset="100"><Reviews /></LazyLoad>
-      <LazyLoad offset="100"><Questions /></LazyLoad>
+      <LazyLoad offset={100}><Franchise /></LazyLoad>
+      <LazyLoad offset={100}><Finance /></LazyLoad>
+      <LazyLoad offset={100}><YouGet /></LazyLoad>
+      <LazyLoad offset={100}><HenkaliMap /></LazyLoad>
+      <LazyLoad offset={100}><Blog /></LazyLoad>
+      <LazyLoad offset={100}><Reviews /></LazyLoad>
+      <LazyLoad offset={100}><Questions /></LazyLoad>
 
       
       <Feedback />

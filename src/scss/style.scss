@@ -3,6 +3,7 @@
 
 @import "./sale";
 @import "./header";
+@import "./menu";
 @import "./gallery";
 @import "./henkaliIs";
 @import "./facts";
@@ -31,8 +32,6 @@ body{
     min-height: 100vh;
     color: $grey;
     background-image: url('../assets/img/henkaly_bg.png');
-}
-html,body{
     overflow-x: hidden
 }
 html{
@@ -116,10 +115,6 @@ section .container{
     body{
         background-image: none;
         background-color: $white;
-    }
-}
-@media screen and (max-width: 1200px){
-    .button{
     }
 }
 

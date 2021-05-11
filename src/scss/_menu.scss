@@ -1,22 +1,93 @@
-.navigation{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    &__link{
-        color: $grey;
-        font-family: $text_bold;
-
-        &:hover{
-            text-decoration: none;
-            color: inherit;
+.burger{
+    height: 19px;
+    cursor: pointer;
+    &__stick{
+        width: 20px;
+        height: 2px;
+        background-color: $black;
+        border-radius: 5px;
+    }
+    &:before,
+    &:after{
+            content: '';
+            width: 29px;
+            height: 2px;
+            background-color: $black;
+            border-radius: 5px;
+            display: block;
         }
-        &.social{
-            color: $red;
-                
+}
+
+.menu{
+    background-color: $white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+
+    .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        &__link{
+            color: $grey;
+            font-family: $text_bold;
+            &__link{
+                margin-right: 60px;
+    
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
             &:hover{
+                text-decoration: none;
+                color: inherit;
+            }     
+        }
+    }
+
+    .social{
+        color: $red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &:hover{
+            color: $red;
+            text-decoration: none;
+        }
+        &__link{
+            &.phone{
+                font-family: $text_bold;
+                font-size: 17px;
                 color: $red;
             }
-        }        
+            margin-right: 30px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 1200px){
+    .menu{
+        .social{
+            justify-content: flex-end;
+            &__link{
+                &.phone{
+                    display: none;
+    
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 540px){
+    .menu{
+        height: 90px;
+        padding: 0;
     }
 }
