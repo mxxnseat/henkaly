@@ -22,9 +22,14 @@
 .menu{
     background-color: $white;
     padding: 15px 0;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 99999;
+    width: 100%;
+
+    &.sticky{
+        position: fixed;
+    }
 
     .navigation{
         display: flex;

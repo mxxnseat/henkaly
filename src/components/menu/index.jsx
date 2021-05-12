@@ -3,8 +3,23 @@ import instagram from "../../assets/img/icons/instagram.svg";
 import telegram from "../../assets/img/icons/telegram.svg";
 
 import { BurgerMenu } from "./burger_menu";
+import { useEffect } from "react";
 
 export function Menu() {
+    useEffect(()=>{
+        const offsetY = 150;
+        const menuEl = document.querySelector(".menu");
+    
+        document.addEventListener("scroll", (e) => {
+    
+            if (Math.abs(document.documentElement.getBoundingClientRect().y) > offsetY && !menuEl.classList.contains("sticky")) {
+                menuEl.classList.add("sticky");
+            } else if (Math.abs(document.documentElement.getBoundingClientRect().y) < offsetY) {
+                menuEl.classList.remove("sticky");
+            }
+        })
+    }, []);
+
     return (
         <section className="menu">
             <div className="container h-100">
