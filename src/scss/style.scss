@@ -32,7 +32,9 @@ body{
     min-height: 100vh;
     color: $grey;
     background-image: url('../assets/img/henkaly_bg.png');
-    overflow-x: hidden
+}
+html, body{
+    overflow-x: hidden;
 }
 html{
     &#popup{

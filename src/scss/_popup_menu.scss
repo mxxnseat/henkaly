@@ -4,6 +4,7 @@
     top:0;
     left: 0;
     position: fixed;
+    overflow-y: scroll;
     background: $white;
     z-index: 999999;
 
@@ -113,12 +114,11 @@
     &:after{
         background-image: url("../assets/img/digital_top-bg_sub.svg"), url("../assets/img/digital_top-bg.svg");
         height: 85px;
-        position: absolute;
+        display: block;
         content: "";
         width: 100%;
         background-size: auto 16px, auto 69px;
         background-repeat: repeat no-repeat;
         background-position: top, bottom;
-        bottom: 0;
     }
 }

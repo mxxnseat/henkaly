@@ -8,7 +8,7 @@ export function PopupMenu(){
         <div className="popup_menu">
             <ModalHeader close={popupMenuAction} />
 
-            <div className="container row mx-auto p-0 m-0">
+            <div className="container row mx-auto mb-5 p-0 m-0">
                 <div className="popup_menu__list col-12">
                     <a href="#" className="popup_menu__link">Концепция</a>
                     <a href="#" className="popup_menu__link">Команда</a>
