@@ -3,16 +3,17 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
 import {setCurrentAdress} from "../../store/actions/adresses";
 
-export function YaMap({adresses}) {
+export function YaMap({adresses, width, classes, height}) {
     const dispatch = useDispatch();
     const placemarkClickHandler = (adress)=>{
         dispatch(setCurrentAdress(adress))
     }
 
+
     return (
         <YMaps>
-            <div className="digital__map d-none d-md-block" id="map">
-                <Map defaultState={{ center: [44.948237, 34.100318], zoom: 4 }} height="100%" width="280px">
+            <div className={`digital__map ${classes}`} id="map">
+                <Map defaultState={{ center: [44.948237, 34.100318], zoom: 4 }} height={height} width={width}>
                     
                     {
                         adresses.map((adress,index)=>{

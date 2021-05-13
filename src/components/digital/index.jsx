@@ -87,7 +87,7 @@ export function Digital(){
         <section className="digital">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-9">
+                    <div className="col-xl-9 col-md-12">
                         <h2 className="heading col-md-12 pl-0">Хинкальные в цифрах</h2>
                         <div className="adress col-md-12 p-0">
                             <div onClick={adressPopupHandler} className="adress-current row flex-nowrap">
@@ -118,8 +118,8 @@ export function Digital(){
                         </div>
                         <div className="count col-md-12 pl-0">
                             <div className="row align-items-center pl-0">
-                                <div className="digital__heading col-md-3 col-6">Счетчик хинкали</div>
-                                <div className="digital__sub-heading col-md-9 col-6">Уже сварено и съедено</div>
+                                <div className="digital__heading col-xl-3 col-md-4 col-6">Счетчик хинкали</div>
+                                <div className="digital__sub-heading col-xl-9 col-md-5 col-6">Уже сварено и съедено</div>
                             </div>
                             <Count />
                         </div>
@@ -129,10 +129,11 @@ export function Digital(){
                         </div>
                         <Button Class="mx-auto">Получить фин. модель</Button>
                     </div>
+                
                 </div>
             </div>
-            
-            <YaMap adresses={adressList} />
+            <YaMap adresses={adressList} height="540px" width="100%" classes="d-none d-md-block d-xl-none" />
+            <YaMap adresses={adressList} height="100%" width="280px" classes="d-none d-xl-block position-absolute" />
             
         </section>
     )

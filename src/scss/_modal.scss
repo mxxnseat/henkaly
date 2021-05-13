@@ -22,8 +22,8 @@
             }
         }
         &-checkbox{
-            width: 60px;
-            height: 60px;
+            min-width: 60px;
+            min-height: 60px;
             border-radius: 15px;
             border: 3px solid #ccc;
             display: inline-block;
@@ -87,6 +87,9 @@
         height: 60px;
         padding-left: 16px;
         border-color: transparent;
+        color: $grey;
+        font-family: $text;
+        font-size: 20px;
 
         &:nth-child(2){
             margin: 0 30px;
@@ -171,11 +174,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-
-            &-checkbox{
-                min-width: 60px;
-                min-height: 60px;
-            }
 
             label{
                 max-width: 315px;

@@ -83,7 +83,7 @@ export function Treasure() {
                     Узнать больше про точки роста и плюсы франшизы.
                 </div>
                 
-                <div className="row justify-content-between flex-md-row flex-column align-items-center">
+                <div className="row justify-content-between flex-xl-row flex-column align-items-center">
                     {
                         treasures.map(item=><TreasureItem key={item.heading} {...item} />)
                     }

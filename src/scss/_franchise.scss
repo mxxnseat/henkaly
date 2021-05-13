@@ -103,8 +103,38 @@
     }
 }
 
-
-@media screen and (min-width: 320px) and (max-width: 540px) {
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .franchise{
+        h2.heading{
+            max-width: 540px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .subhead{
+            text-align: center;
+        }
+        &__item{
+            padding: 0 !important;
+            max-width: 350px !important;
+            
+            &:nth-child(2n){
+                margin-left: 0;
+            }
+            &:nth-child(5){
+                margin: 0 auto;
+                margin-bottom: 60px;
+            }
+        }
+        &__heading{
+            font-size: 30px;
+        }
+        &__number{
+            left: initial;
+            right: 50px;
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .franchise{
         .container{
             max-width: 350px;

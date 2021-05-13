@@ -3,12 +3,12 @@ export function HenkaliIs(){
         <section className="henkali_is">
             <div className="container">
                 <div className="row pt-5 pb-5">
-                    <div className="col-12 col-md-7">
+                    <div className="col-12 col-md-10 mx-md-auto mx-xl-0">
                         <h2 className="heading">
                             <span className="text_select-red">Хинкальные </span>– что это?
                         </h2>
 
-                        <div className="content col-md-8 col-xl-10 pl-0">
+                        <div className="content col-md-12 col-xl-10 pl-0">
                             <div className="content__text">
                                 Небольшие душевные кафе грузинской кухни.<br/>
                                 <b>Основной продукт — хинкали.</b>

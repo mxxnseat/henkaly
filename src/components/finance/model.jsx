@@ -34,8 +34,8 @@ export function Model(){
     ]
 
     return (
-        <div className="col-12 col-md-6 pt-5 pb-5 finance__model">
-            <div className="col-9 mx-auto">
+        <div className="col-12 col-xl-6 pt-5 pb-5 finance__model">
+            <div className="col-9 mx-auto finance__model-wrap">
                 <h2 className="heading">Финансовая модель</h2>
                 <div className="finance__model-period">Мы работаем с 2016 года.<br/>20 заведений уже открыто.</div>
                 {
