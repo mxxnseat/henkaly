@@ -31,6 +31,32 @@
     &__item{
         padding: 50px 0;
         border-bottom: 1px solid #ababab;
+        cursor: pointer;
+        
+        &.active{
+            .questions__item-text{
+                display: block;
+            }
+            .questions__item-heading{
+                &:after{
+                    background-image: url("../assets/img/icons/accardeon_close.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24px;
+                    height: 4px;
+                }
+            }
+        }
+
+        &-text{
+            font-family: $text;
+            font-size: 16px;
+            line-height: 140%;
+            color: $grey;
+            padding: 0 41px 0 10px;
+            margin-top: 30px;
+            display: none;
+        }
 
         &-heading{
             font-family: $text_bold;
@@ -38,10 +64,10 @@
             line-height: 100%;
             color: $darkBlue;
             position: relative;
-            cursor: pointer;
             display: flex;
             justify-content: space-between;
             padding: 0 41px 0 10px;
+            align-items: center;
 
             &:after{
                 content: '';

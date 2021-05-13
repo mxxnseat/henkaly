@@ -69,8 +69,9 @@
 
             &:after{
                 content: '';
-                background: url("../assets/img/henkaly_bg.png");
+                background: url("../assets/img/henkaly_bg.svg");
                 background-position: 0px 100%;
+                background-repeat: repeat;
                 position: absolute;
                 top: 0;
                 left: 0;

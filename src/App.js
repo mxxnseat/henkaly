@@ -52,7 +52,9 @@ function App() {
       {
         isPopup ? <PopupMenu /> : ''
       }
-      <Menu />
+      {
+        !isModal ? <Menu /> : ''
+      }
 
       <Header />
 

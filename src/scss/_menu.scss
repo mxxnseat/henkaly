@@ -37,6 +37,7 @@
         justify-content: space-between;
     
         &__link{
+            cursor: pointer;
             color: $grey;
             font-family: $text_bold;
             &__link{
