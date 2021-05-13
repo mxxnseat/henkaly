@@ -8,7 +8,8 @@ export function Reviews(){
             name: "Денис Дячук",
             city: "Ялта",
             date: "16.04.2021",
-            preview: require("../../assets/img/reviews/preview.png").default
+            preview: require("../../assets/img/reviews/preview.png").default,
+            video: require("../../assets/videos/reviews_denis.MP4").default
         },
         {
             name: "Денис Дячук",

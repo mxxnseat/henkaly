@@ -38,10 +38,10 @@ export function Footer(){
                         <div className="footer__list-header">Мы в соц. сетях</div>
 
                         <div className="row social_contacts">
-                            <a href="#" className="social_contacts-fb col-5">Facebook</a>
+                            <a href="//facebook.com/starikhinkalych/" className="social_contacts-fb col-5">Facebook</a>
                             <a href="#" className="social_contacts-yt col-5">YouTube</a>
-                            <a href="#" className="social_contacts-inst col-5">Instagram</a>
-                            <a href="#" className="social_contacts-vk col-5">Вконтакте</a>
+                            <a href="//instagram.com/starikhinkalych/" className="social_contacts-inst col-5">Instagram</a>
+                            <a href="//vk.com/starikhinkalych" className="social_contacts-vk col-5">Вконтакте</a>
                         </div>
                     </div>
                 </div>

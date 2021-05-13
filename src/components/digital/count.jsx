@@ -41,7 +41,7 @@ export function Count(){
     ]// Нужно запрогать
 
     return (
-        <div className="count__wrapper row justify-content-between  col-12">
+        <div className="count__wrapper row justify-content-between mx-0 col-12">
             {
                 countState.map((digit)=>{
                     return <CountItem key={digit.id} value={digit.value} />

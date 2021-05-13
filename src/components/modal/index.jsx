@@ -2,9 +2,31 @@ import { useDispatch } from "react-redux";
 import { Button } from "../total/button";
 
 import {modalAction} from "../../store/actions/modal";
+import { useState } from "react";
 
 export function FeedBackModal(props) {
     const dispatch = useDispatch();
+
+    const [inputsValue, setInputValue] = useState({
+        name: '',
+        phone: '',
+        email: ''
+    });
+
+    const inputHandler = (e)=>{
+        const field = e.target.getAttribute("name");
+        const value = e.target.value;
+        console.log(value);
+        setInputValue({
+            ...inputsValue,
+            [field]: value
+        });
+    }
+
+    const buttonSendHandler = (e)=>{
+        console.log(inputsValue);
+    }
+
 
     return (
         <div className="col-12 feedback_modal">
@@ -33,9 +55,9 @@ export function FeedBackModal(props) {
 
                 <div className="feedback_modal__form mx-auto row col-12 p-0">
                     <div className="col-md-12 row flex-md-nowrap p-0 mx-auto feedback_modal__input-wrap">
-                        <input type="text" className="feedback_modal__input" placeholder="Имя" />
-                        <input type="text" className="feedback_modal__input" placeholder="E-mail" />
-                        <input type="text" className="feedback_modal__input" placeholder="Телефон" />
+                        <input type="text" onChange={inputHandler} name="name" defaultValue={inputsValue.name} className="feedback_modal__input" placeholder="Имя" />
+                        <input type="text" onChange={inputHandler} name="email" defaultValue={inputsValue.email} className="feedback_modal__input" placeholder="E-mail" />
+                        <input type="text" onChange={inputHandler} name="phone" defaultValue={inputsValue.phone} className="feedback_modal__input" placeholder="Телефон" />
                     </div>
 
                     <div className="row col-12 mx-auto p-0 align-items-center">
@@ -48,12 +70,12 @@ export function FeedBackModal(props) {
                         </label>
                     </div>
 
-                    <div className="row col-md-8 justify-content-between submit-wrapper align-items-center p-0 mx-auto">
+                    <div className="row flex-nowrap col-md-8 justify-content-between submit-wrapper align-items-center p-0 mx-auto">
                         <a href="#whatsapp" className="social wa">
                             WhatsApp
                         </a>
-                        <Button>получить предложение</Button>
-                        <a href="#telegram" className="social tg">
+                        <button className="button" onClick={buttonSendHandler}>получить предложение</button>
+                        <a href="//t.me/franchise_hinkalych" className="social tg">
                             Telegram
                         </a>
                     </div>

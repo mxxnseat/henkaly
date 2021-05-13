@@ -31,7 +31,8 @@ body{
     font-family: $text;
     min-height: 100vh;
     color: $grey;
-    background-image: url('../assets/img/henkaly_bg.png');
+    background-image: url('../assets/img/henkaly_bg.svg');
+    background-repeat: repeat;
 }
 html, body{
     overflow-x: hidden;
