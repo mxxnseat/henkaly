@@ -1,6 +1,6 @@
 export function FranchiseItem({ number, heading, slogan, list, buttonText }) {
     return (
-        <div className="franchise__item">
+        <div className="franchise__item col-md-6 col-xl-4">
             <div className="franchise__number">0{number}</div>
             <div className="franchise__slogan">{slogan}</div>
             <div className="franchise__heading">{heading}</div>

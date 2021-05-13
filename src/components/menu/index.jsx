@@ -41,7 +41,7 @@ export function Menu() {
                     <div className="logo-wrap col-4 p-0">
                         <img src={logo} className="logo" alt="Логотип" />
                     </div>
-                    <nav className="navigation col-5 d-none d-md-flex">
+                    <nav className="navigation col-5 d-none d-xl-flex">
                         <div onClick={()=>scroll(".henkali_is")} className="navigation__link">Концепция</div>
                         <div onClick={()=>scroll(".team")} className="navigation__link">Команда</div>
                         <div onClick={()=>scroll(".finance")} className="navigation__link">Условия</div>

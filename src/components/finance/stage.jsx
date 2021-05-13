@@ -30,7 +30,7 @@ export function Stage() {
     ];
 
     return (
-        <div className="col-12 col-md-6 finance__stage pt-5">
+        <div className="col-12 col-xl-6 finance__stage pt-5 pb-5">
             <h2 className="heading">
                 <div className="text_select-red">
                     Этапы

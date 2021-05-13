@@ -1,8 +1,11 @@
 import { useDispatch } from "react-redux";
-import { Button } from "../total/button";
+import InputMask from "react-input-mask";
 
-import {modalAction} from "../../store/actions/modal";
+import { modalAction } from "../../store/actions/modal";
 import { useState } from "react";
+
+import { nameValidate, emailValidate, phoneValidate } from "./validator";
+import axios from "axios";
 
 export function FeedBackModal(props) {
     const dispatch = useDispatch();
@@ -13,7 +16,7 @@ export function FeedBackModal(props) {
         email: ''
     });
 
-    const inputHandler = (e)=>{
+    const inputHandler = (e) => {
         const field = e.target.getAttribute("name");
         const value = e.target.value;
         console.log(value);
@@ -23,15 +26,41 @@ export function FeedBackModal(props) {
         });
     }
 
-    const buttonSendHandler = (e)=>{
-        console.log(inputsValue);
+    const buttonSendHandler = (e) => {
+        const errors = {
+
+        };
+
+        const phone = inputsValue["phone"].replace(/\D/g, '');
+
+        emailValidate(inputsValue["email"]) ? delete errors["email"] : errors["email"] = true;
+        phoneValidate(phone) ? delete errors["phone"] : errors["phone"] = true;
+        nameValidate(inputsValue["name"]) ? delete errors["name"] : errors["name"] = true;
+
+        const privacyCheckbox = document.querySelector("#privacy");
+
+        if (!Object.keys(errors).length && privacyCheckbox.checked) {
+            axios.post("/sendForm", JSON.stringify(inputsValue), {
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+                .then(data=>{
+                    console.log(data);
+                })
+                .catch(error=>{
+                    console.log("Some troubles. Try later");
+                })
+        } else {
+            alert("ALERT 12RWDKLFKWDHOIF WEJK");
+        }
     }
 
 
     return (
         <div className="col-12 feedback_modal">
             {
-                props.popup ? <div className="modal_close  d-none d-md-block" onClick={()=>dispatch(modalAction())}><img src={require("../../assets/img/close.svg").default} alt="Закрыть модальное окно" /></div> : ''
+                props.popup ? <div className="modal_close  d-none d-md-block" onClick={() => dispatch(modalAction())}><img src={require("../../assets/img/close.svg").default} alt="Закрыть модальное окно" /></div> : ''
             }
 
             <div className="col-10 mx-auto feedback_modal__wrap">
@@ -57,7 +86,14 @@ export function FeedBackModal(props) {
                     <div className="col-md-12 row flex-md-nowrap p-0 mx-auto feedback_modal__input-wrap">
                         <input type="text" onChange={inputHandler} name="name" defaultValue={inputsValue.name} className="feedback_modal__input" placeholder="Имя" />
                         <input type="text" onChange={inputHandler} name="email" defaultValue={inputsValue.email} className="feedback_modal__input" placeholder="E-mail" />
-                        <input type="text" onChange={inputHandler} name="phone" defaultValue={inputsValue.phone} className="feedback_modal__input" placeholder="Телефон" />
+                        <InputMask
+                            className="feedback_modal__input"
+                            onChange={inputHandler}
+                            name="phone"
+                            defaultValue={inputsValue.phone}
+                            mask="+7 (999) 999-99-99"
+                            placeholder="Телефон"
+                        />
                     </div>
 
                     <div className="row col-12 mx-auto p-0 align-items-center">

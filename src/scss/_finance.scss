@@ -141,7 +141,7 @@
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 540px){
+@media screen and (min-width: 320px) and (max-width: 768px){
     .finance{
         background-image: none;
 
@@ -181,6 +181,44 @@
             max-width: 300px;
             margin: 0 auto;
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .finance{
+        background-size: 100% 51%;
+        background-position: top;
+
+        &__model{
+            &-wrap{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &-item{
+                min-width: 350px;
+                justify-content: center;
+            }
+        }
+        &__stage{
+            padding-left: 0 !important;
+
+            h2.heading{
+                margin: 0 auto;
+                text-align: left;
+            }
+            &-process{
+                max-width: 350px;
+                margin: 0 auto;
+                margin-top: 30px;
+                margin-bottom: 48px;
+                &_wrap{
+                    max-width: 350px;
+                    margin: 0 auto;
+                }
+            }
+
         }
     }
 }

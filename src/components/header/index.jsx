@@ -47,7 +47,7 @@ export function Header() {
                             Открой хинкальную с доставкой в своем городе!
                             </div>
 
-                        <Button Class="d-xl-block d-none">
+                        <Button Class="d-md-block d-none">
                             получить бизнес план
                         </Button>
                     </div>
@@ -57,7 +57,7 @@ export function Header() {
                             * Результат может отличаться в каждом индивидуальном (отдельном) случае.
                         </div>
                     </div>
-                    <Button Class="mx-auto d-xl-none d-block">
+                    <Button Class="mx-auto d-md-none d-block">
                         получить бизнес план
                     </Button>
                 </div>

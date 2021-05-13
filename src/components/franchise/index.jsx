@@ -80,7 +80,7 @@ export function Franchise() {
                     Что входит в пакет франчайза «Старик Хинкалыч».
                     </div>
 
-                    <div className="row col-12 mx-auto justify-content-center p-0 p-md-1">
+                    <div className="row col-12 mx-auto justify-content-md-between justify-content-xl-center justify-content-center p-0 p-md-1">
                         {
                         franchiseData.map((el,index)=>{
                             return <FranchiseItem {...el} key={index} number={index+1} />
