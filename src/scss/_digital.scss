@@ -267,6 +267,9 @@
             padding: 0;
             margin-top: 30px;
         }
+        &__list{
+            transition: transform .2s linear;
+        }
         &__item{
             width: 100%;
             max-width: 80px;
@@ -274,8 +277,9 @@
             border-radius: 15px;
             background-color: $white;
             
+            overflow: hidden;
+
             display: flex;
-            align-items: center;
             justify-content: center;
 
             font-family: $text_bold;

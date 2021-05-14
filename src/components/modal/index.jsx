@@ -63,7 +63,7 @@ export function FeedBackModal(props) {
                 props.popup ? <div className="modal_close  d-none d-md-block" onClick={() => dispatch(modalAction())}><img src={require("../../assets/img/close.svg").default} alt="Закрыть модальное окно" /></div> : ''
             }
 
-            <div className="col-10 mx-auto feedback_modal__wrap">
+            <div className="col-xl-10 col-10 col-md-12 mx-auto feedback_modal__wrap">
                 <h2 className="heading">
                     <span className="text_select-red">Заполните форму</span> и получите
                 </h2>
@@ -106,7 +106,7 @@ export function FeedBackModal(props) {
                         </label>
                     </div>
 
-                    <div className="row flex-nowrap col-md-8 justify-content-between submit-wrapper align-items-center p-0 mx-auto">
+                    <div className="row flex-nowrap col-xl-8 justify-content-between submit-wrapper align-items-center p-0 mx-auto">
                         <a href="#whatsapp" className="social wa">
                             WhatsApp
                         </a>

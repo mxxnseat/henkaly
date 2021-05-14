@@ -7,6 +7,9 @@
     overflow-y: scroll;
     background: $white;
     z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &__list{
         display: flex;

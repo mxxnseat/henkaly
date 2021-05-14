@@ -142,7 +142,7 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 540px){
+@media screen and (min-width: 320px) and (max-width: 768px){
     .feedback_modal{
         border-radius: 0;
 
@@ -216,4 +216,28 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .feedback_modal{
+            &__get-item{
+                .text{
+                    font-size: 14px !important;
+                }
+            }
+            &__input-wrap{
+                flex-direction: column;
+            }
+            &__input{
+                max-width: 100% !important;
+                &:nth-child(2){
+                    margin: 30px 0 !important;
+                }
+            }
+        }
+        h2.heading{
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 }
