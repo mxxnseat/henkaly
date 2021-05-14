@@ -3,11 +3,13 @@ import { useSelector } from "react-redux";
 
 export function CountItem(props){
     const [currentTransform, setTransform] = useState('11px');
-    const countElHeight = 96;
-
-    // const digit = useSelector(data=>data.henkali_value.count);
+    const [countElHeight, setCountElHeight] = useState(48);
     useEffect(()=>{
-        setTransform(-props.value*countElHeight+'px');
+        setCountElHeight(document.querySelector(".count__item-value").clientHeight);
+    }, []);
+    useEffect(()=>{
+        setTransform(-props.value*countElHeight+5+'px');
+
     })
 
     return (
