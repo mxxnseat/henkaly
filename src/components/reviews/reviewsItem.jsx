@@ -7,8 +7,8 @@ export function ReviewsItem({name, city, date, preview, video}) {
 
     return (
         <div className="reviews__item">
-            <div className="reviewer_info mx-auto">
-                <div className="reviewer_info__name">{name}</div>
+            <div className="reviewer_info mx-auto row">
+                <div className="reviewer_info__name col-md-12 col-xl-3">{name}</div>
                 <div className="reviewer_info__city">
                     Город: <span className="current_city">{city}</span>
                 </div>

@@ -35,7 +35,7 @@ export function HenkaliMap(){
                     <h2 className="heading">
                         <span className="text_select-red">Старик Хинкалыч</span> на карте России
                     </h2>
-                    <div className="subhead d-md-none d-block">
+                    <div className="subhead d-xl-none d-block">
                     Используйте схему для навигации по карте России.
                     </div>
 
@@ -46,7 +46,7 @@ export function HenkaliMap(){
                     </div>
 
                     <div className="row col-md-12 henkali_map__part-wrap">
-                        <div className="perspective_city col-3 d-md-block d-none">
+                        <div className="perspective_city col-md-5 col-xl-3 d-md-block d-none">
                             <div className="perspective_city__heading">Перспективные города:</div>
 
                             <div className="perspective_city__list">
@@ -61,10 +61,17 @@ export function HenkaliMap(){
                                 }
                             </div>
                         </div>
-                        <div className="henkali_map__map col-md-9 flex-nowrap row">
+                        <div className="henkali_map__map col-md-7 col-xl-9 flex-nowrap row">
+
+                            <div className="henkali_map__part d-md-flex d-none d-xl-none">
+                                <div onClick={partToggle} className="henkali_map__part-select active" id="start_map" data-part="part_1"></div>
+                                <div onClick={partToggle} className="henkali_map__part-select" id="middle_map" data-part="part_2"></div>
+                                <div onClick={partToggle} className="henkali_map__part-select" id="end_map" data-part="part_3"></div>
+                            </div>
+
                             <img className="map_part-1 map_part" id="part_1" src={require(`../../assets/img/map/${currentPart}.png`).default} alt="Карта хенкали" />
-                            <img className="map_part-2 map_part d-md-block d-none" id="part_2" src={require("../../assets/img/map/part_2.png").default} alt="Карта хенкали" />
-                            <img className="map_part-3 map_part d-md-block d-none" id="part_3" src={require("../../assets/img/map/part_3.png").default} alt="Карта хенкали" />
+                            <img className="map_part-2 map_part d-xl-block d-none" id="part_2" src={require("../../assets/img/map/part_2.png").default} alt="Карта хенкали" />
+                            <img className="map_part-3 map_part d-xl-block d-none" id="part_3" src={require("../../assets/img/map/part_3.png").default} alt="Карта хенкали" />
                         
                             <MapLegend />
                         </div>

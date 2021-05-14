@@ -84,7 +84,7 @@
     }
   }
 }
-@media screen and (min-width: 320px) and (max-width: 540px){
+@media screen and (min-width: 320px) and (max-width: 768px){
   .sale{
     
     &__text{
@@ -93,5 +93,26 @@
       font-size: 11px;
       max-width: 239px;
     }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .sale{
+    .bonus{
+      width: 55%;
+      justify-content: flex-end;
+
+      background-color: $transparentBlack_05;
+      &__text-wrap{
+        margin-right: 20px;
+      }
+    }
+
+    &__text{
+      margin-left: 0px;
+      max-height: 60px;
+      font-size: 11px;
+      max-width: 239px;
+    }
+    
   }
 }

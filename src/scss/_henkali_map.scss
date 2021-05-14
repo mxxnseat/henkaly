@@ -100,8 +100,40 @@
 }
 
 
+@media screen and (max-width: 1200px){
+    .henkali_map__part{
+        width: 315px;
+        justify-content: space-between;
+        &-select{
+            width: 95px;
+            height: 182px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer;
 
-@media screen and (min-width: 320px) and (max-width: 540px){
+            &.active#start_map{
+                background-image: url("../assets/img/map/russia_start-selected.png");
+            }
+            &.active#middle_map{
+                background-image: url("../assets/img/map/russia_middle-selected.png");
+            }
+            &.active#end_map{
+                background-image: url("../assets/img/map/russia_end-selected.png");
+            }
+
+            &#start_map{
+                background-image: url("../assets/img/map/russia_start.png");
+            }
+            &#middle_map{
+                background-image: url("../assets/img/map/russia_middle.png");
+            }
+            &#end_map{
+                background-image: url("../assets/img/map/russia_end.png");
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 768px){
     .henkali_map{
         .heading{
             margin-top: 90px;
@@ -184,37 +216,41 @@
                 }
             }
         }
-    
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .henkali_map{
+        h2.heading{
+            max-width: 440px;
+            margin: 0 auto;
+            margin-top: 120px;
+            margin-bottom: 30px;
+        }
+        .subhead{
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+        .perspective_city__heading{
+            font-size: 24px;
+        }
+        .henkali_map__legend{
+            display: none;
+        }
+        &__map{
+            flex-direction: column;
+        }
         &__part{
-            width: 315px;
-            justify-content: space-between;
-            &-select{
-                width: 95px;
-                height: 182px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                cursor: pointer;
+            min-width: 315px;
 
-                &.active#start_map{
-                    background-image: url("../assets/img/map/russia_start-selected.png");
-                }
-                &.active#middle_map{
-                    background-image: url("../assets/img/map/russia_middle-selected.png");
-                }
-                &.active#end_map{
-                    background-image: url("../assets/img/map/russia_end-selected.png");
-                }
-
-                &#start_map{
-                    background-image: url("../assets/img/map/russia_start.png");
-                }
-                &#middle_map{
-                    background-image: url("../assets/img/map/russia_middle.png");
-                }
-                &#end_map{
-                    background-image: url("../assets/img/map/russia_end.png");
-                }
-            }
+        }
+        .map_part{
+            max-height: 497px;
+            object-fit: contain;
+            max-width: 100%;
+            margin-top: 30px;
+        }
+        .button{
+            margin: 60px auto;
         }
     }
 }

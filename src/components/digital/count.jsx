@@ -1,50 +1,32 @@
+import { useEffect } from "react"
 import { CountItem } from "./countItem"
 
+import {henkaliCountChange, henkaliCountSet} from "../../store/actions/henkali_count";
+import { useDispatch, useSelector } from "react-redux";
+import { generator } from "./generateNumber";
+
 export function Count(){
-    const countState = [
-        {
-            id: 1,
-            value: 0
-        },
-        {
-            id: 2,
-            value: 0
-        },
-        {
-            id: 3,
-            value: 0
-        },
-        {
-            id: 4,
-            value: 0
-        },
-        {
-            id: 5,
-            value: 0
-        },
-        {
-            id: 6,
-            value: 0
-        },
-        {
-            id: 7,
-            value: 0
-        },
-        {
-            id: 8,
-            value: 0
-        },
-        {
-            id: 9,
-            value: 0
+    const dispatch = useDispatch();
+    const henkali_count = useSelector(store=>store.henkali_value.count);
+    const currentAddress = useSelector(store=>store.adresses.currentAdress)
+
+    
+    useEffect(()=>{
+        const timeout = generator(dispatch, henkaliCountChange, henkali_count);
+
+        return ()=>{
+            clearTimeout(timeout);
         }
-    ]// Нужно запрогать
+    }, [henkali_count]);
+    useEffect(()=>{
+        dispatch(henkaliCountSet(currentAddress));
+    }, [currentAddress])
 
     return (
         <div className="count__wrapper row justify-content-between mx-0 col-12">
             {
-                countState.map((digit)=>{
-                    return <CountItem key={digit.id} value={digit.value} />
+                henkali_count&& henkali_count.split('').map((digit, index)=>{
+                    return <CountItem key={index} value={digit} />
                 })
             }
         </div>

@@ -11,7 +11,7 @@ export function Blog(){
                     </h2>
                     <div className="subhead col-md-12">Полезные и понятные видео с подробностями и фишками франшизы.</div>
 
-                    <div className="blog__video-list col-md-12">
+                    <div className="blog__video-list col-xl-12">
                         <div className="blog__video-item main-video">
                             <Play />
                             <div className="video-preview_content">

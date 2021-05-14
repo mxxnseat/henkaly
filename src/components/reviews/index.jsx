@@ -66,7 +66,7 @@ export function Reviews(){
 
                     <div onClick={prevSlide} className="reviews__arrow left d-md-block d-none"></div>
 
-                    <div className="reviews-list p-0 col-md-10 mx-auto">
+                    <div className="reviews-list p-0 col-xl-10 col-md-8 mx-auto">
                         <div onClick={prevSlide} className="reviews__arrow left d-md-none d-block"></div>
 
                             <div className="reviews-list__lenta" style={{transform: `translateX(${offset}px)`}}>
