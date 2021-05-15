@@ -75,11 +75,14 @@ export function Digital(){
 
     
     const slides = [
-        <img src={require("../../assets/img/carousel/1.png").default} alt="1" />,
-        <img src={require("../../assets/img/carousel/2.png").default} alt="2" />,
-        <img src={require("../../assets/img/carousel/2.png").default} alt="2" />,
-        <img src={require("../../assets/img/carousel/2.png").default} alt="2" />,
-        <img src={require("../../assets/img/carousel/3.png").default} alt="3" />];
+        <img src={require("../../assets/img/carousel/1.jpg").default} alt="1" />,
+        <img src={require("../../assets/img/carousel/2.jpg").default} alt="2" />,
+        <img src={require("../../assets/img/carousel/3.jpg").default} alt="3" />,
+        <img src={require("../../assets/img/carousel/4.jpg").default} alt="4" />,
+        <img src={require("../../assets/img/carousel/5.jpg").default} alt="5" />,
+        <img src={require("../../assets/img/carousel/6.jpg").default} alt="6" />,
+        <img src={require("../../assets/img/carousel/7.jpg").default} alt="7" />
+    ];
 
     
     
