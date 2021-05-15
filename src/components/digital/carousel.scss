@@ -107,8 +107,12 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
           opacity: 0;
           img {
             min-height: 220px;
+            object-fit: cover;
             height: 100%;
+            width: 100%;
+            max-width: 400px;
             border-radius: 15px;
+            filter: blur(3px);
           }
         }
         &.preactivede {
@@ -149,6 +153,8 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
             width: 500px;
             img{
                 width: 100%;
+                max-width: 100%;
+                filter: blur(0);
             }
           }
         }
@@ -275,7 +281,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
 
                             img{
                                 min-height: 107px;
-
+                                max-width: 150px;
                             }
                         }
                     }

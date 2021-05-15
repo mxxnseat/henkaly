@@ -58,7 +58,7 @@ export function Questions(){
                     }
                 </div>
 
-                <div className="questions__more col-xl-6 p-0 mx-md-auto ml-auto">
+                <div className="questions__more col-xl-6 p-0 mx-md-auto ml-auto ml-auto mr-xl-0">
                     <h2 className="heading">
                         Хотите узнать <span className="text_select-red">больше?</span>
                     </h2>
