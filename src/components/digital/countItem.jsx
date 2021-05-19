@@ -9,7 +9,6 @@ export function CountItem(props){
     }, []);
     useEffect(()=>{
         setTransform(-props.value*countElHeight+5+'px');
-
     })
 
     return (
