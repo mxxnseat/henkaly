@@ -3,6 +3,9 @@
       "city":"Симферополь",
       "street":"ул. Киевская 189",
       "shoppingCenter":"ТЦ «Южная галерея»",
+      "square":35,
+      "check":550,
+      "check_count": 4700, 
       "cord":[
         44.985142,
         34.086573
@@ -13,180 +16,222 @@
       "city":"Симферополь",
       "street":"ул. Турецкая, д. 25",
       "shoppingCenter":"ТЦ «Южная галерея»",
+      "square":97,
+      "check":830,
+      "check_count": 3610, 
       "cord":[
         44.94515,
         34.09994
       ],
-      "henkali_value": "00792344"
-    },
-    {
-      "city":"Севастополь",
-      "street":"ул. 6-я бастионная, д. 42",
-      "shoppingCenter":"",
-      "cord":[
-        44.603629,
-        33.513349
-      ],
-      "henkali_value": "01192344"
+      "henkali_value": "002791200"
     },
     {
       "city":"Севастополь",
       "street":"ул. Вакуленчука, д. 29",
       "shoppingCenter":"трц «муссон»",
+      "square":200,
+      "check":755,
+      "check_count": 6400,
       "cord":[
         44.585412,
         33.486005
       ],
-      "henkali_value": "005612333"
+      "henkali_value": "000492590"
     },
     {
       "city":"Бахчисарай",
       "street":"ул. Симферопольская, д. 5-а",
       "shoppingCenter":"",
+      "square":210,
+      "check":1100,
+      "check_count": 2400,
       "cord":[
         44.755579,
         33.856335
       ],
-      "henkali_value": "000992333"
+      "henkali_value": "000675380"
     },
     {
       "city":"Алушта",
       "street":"ул. Набережная, д. 18",
       "shoppingCenter":"трц «муссон»",
+      "square":280,
+      "check":1349,
+      "check_count": 1097,
       "cord":[
         44.653498,
         34.403014
       ],
-      "henkali_value": "002154122"
-    },
-    {
-      "city":"Симферополь",
-      "street":"ул. Киевская, д.189",
-      "shoppingCenter":"ТЦ «Южная галерея»",
-      "cord":[
-        44.985142,
-        34.086573
-      ],
-      "henkali_value": "001344122"
+      "henkali_value": "000998500"
     },
     {
       "city":"Симферополь",
       "street":"ш. Евпаторийское, д. 8",
+      "square":150,
+      "check":800,
+      "check_count": 4150, 
       "shoppingCenter":"ТЦ «Меганом»",
       "cord":[
         44.971128,
         34.076988
       ],
-      "henkali_value": "000999999"
+      "henkali_value": "000323630"
     },
     {
       "city":"Евпатория",
       "street":"ул. Интернациональная, д.130",
+      "square":220,
+      "check":960,
+      "check_count": 3250, 
       "shoppingCenter":"",
       "cord":[
         45.200493,
         33.344673
       ],
-      "henkali_value": "002654111"
+      "henkali_value": "000250590"
     },
     {
       "city":"Керчь",
       "street":"ул. Ленина, д.23",
+      "square":98,
+      "check":810,
+      "check_count": 2950, 
       "shoppingCenter":"",
       "cord":[
         45.354591,
         36.471385
       ],
-      "henkali_value": "006143562"
+      "henkali_value": "000233530"
     },
     {
       "city":"Симферополь",
       "street":"ул. Пушкина, д.11",
       "shoppingCenter":"",
+      "square":98,
+      "check":650,
+      "check_count": 3500, 
       "cord":[
         44.950623,
         34.098
       ],
-      "henkali_value": "005144444"
+      "henkali_value": "000730240"
     },
     {
       "city":"Ялта",
       "street":"ул. Игнатенко, д.20",
       "shoppingCenter":"",
+      "square":130,
+      "check":390,
+      "check_count": 1750, 
       "cord":[
         44.496193,
         34.173243
       ],
-      "henkali_value": "009243111"
+      "henkali_value": "000280460"
     },
     {
       "city":"Курск",
       "street":"ул. Ленина, д.12",
       "shoppingCenter":"",
+      "square":160,
+      "check":840,
+      "check_count": 2700, 
       "cord":[
         51.733675,
         36.192503
       ],
-      "henkali_value": "009512333"
+      "henkali_value": "000223300"
     },
     {
       "city":"Курск",
       "street":"ул. Карла маркса, д.6",
       "shoppingCenter":"",
+      "square":140,
+      "check":390,
+      "check_count": 1750, 
       "cord":[
         51.74895,
         36.191721
       ],
-      "henkali_value": "067251211"
+      "henkali_value": "000080000"
     },
     {
       "city":"Кострома",
       "street":"ул. Советская, д.2",
       "shoppingCenter":"",
+      "square":98,
+      "check":930,
+      "check_count": 2280, 
       "cord":[
         57.765398,
         40.931727
       ],
-      "henkali_value": "000524444"
+      "henkali_value": "000188630"
     },
     {
       "city":"Феодосия",
       "street":"ул, федько, 4",
       "shoppingCenter":"",
+      "square": 260,
+      "check": 1100,
+      "check_count": 5850, 
       "cord":[
         45.041445,
         35.378378
       ],
-      "henkali_value": "009783333"
+      "henkali_value": "000460200"
     },
     {
       "city":"Курск",
       "street":"ул. Студенческая, д. 1",
       "shoppingCenter":"ТЦ \"Eвропа 40\"",
+      "square": 40,
+      "check": 710,
+      "check_count": 2150, 
       "cord":[
         51.7417,
         36.145773
       ],
-      "henkali_value": "000784311"
-    },
-    {
-      "city":"Самара",
-      "street":"ул. Аэродромная, д.47а",
-      "shoppingCenter":"ТРК \"Аврора Молл\"",
-      "cord":[
-        53.191368,
-        50.1898
-      ],
-      "henkali_value": "000941111"
+      "henkali_value": "000146980"
     },
     {
       "city":"Ижевск",
       "street":"ул. Пушкинская, д.252",
       "shoppingCenter":"",
+      "square": 160,
+      "check": 255,
+      "check_count": 1650, 
       "cord":[
         56.859527,
         53.210287
       ],
-      "henkali_value": "000341132"
+      "henkali_value": "000126980"
+    },
+    {
+      "city":"Курчатов",
+      "street":"ул. Энергетиков, д.52",
+      "shoppingCenter":"",
+      "square": 180,
+      "check": 830,
+      "check_count": 2310, 
+      "cord":[
+        56.859527,
+        53.210287
+      ],
+      "henkali_value": "000159580"
+    },
+    {
+      "city":"Севастополь",
+      "street":"ул. Тульская, д.18,",
+      "shoppingCenter":"",
+      "square": 115,
+      "check": 1025,
+      "check_count": 3280, 
+      "cord":[
+        56.859527,
+        53.210287
+      ],
+      "henkali_value": "001108900"
     }
+
   ]

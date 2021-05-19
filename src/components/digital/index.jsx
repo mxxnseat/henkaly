@@ -1,13 +1,9 @@
-//digits
-import metrs from "../../assets/img/facility/m2.png";
-import checkue from "../../assets/img/facility/сheckue.svg";
-
 //popularity
 import henkali from "../../assets/img/icons/henkali.png";
 import hot_dish from "../../assets/img/icons/hot_dish.png";
 import hachapuri from "../../assets/img/icons/hachapuri.png";
 
-import { FacilityItem } from "./facilityItem";
+import { Facility } from "./facility";
 import { PopularyItem } from "./popularyItem";
 import { Count } from "./count";
 import { Button } from "../total/button";
@@ -22,23 +18,6 @@ import {getAdresses, setCurrentAdress} from "../../store/actions/adresses";
 import { useDispatch, useSelector } from "react-redux";
 
 export function Digital(){
-    const facilityDigitals = [
-        {
-            img: metrs,
-            header: 'Площадь заведения',
-            digits: "120 м2"
-        },
-        {
-            img: checkue,
-            header: 'Средний чек',
-            digits: "750 ₽"
-        },
-        {
-            img: checkue,
-            header: 'Количество чеков',
-            digits: "1100 чеков"
-        }
-    ];
     const popularyGoods = [
         {
             img: henkali,
@@ -60,6 +39,7 @@ export function Digital(){
     const dispatch = useDispatch();
     const adressList = useSelector(store=>store.adresses.adresses);
     const currentAdress = useSelector(store=>store.adresses.currentAdress);
+    
 
     useEffect(() => dispatch(getAdresses()), []);
 
@@ -106,10 +86,12 @@ export function Digital(){
                             }
                             
                         </div>
+                        <Facility />
                         <div className="facility mx-auto col-md-12 row">
-                            {
-                                facilityDigitals.length ? facilityDigitals.map(digits=><FacilityItem key={digits.header} {...digits} />) : ''
-                            }
+                            
+                            {/* {
+                                facilityDigitals.length ? facilityDigitals.map(digits=><FacilityItem key={digits.header} adress={currentAdress} {...digits} />) : ''
+                            } */}
                         </div>
                         <div className="populary col-md-12">
                             <div className="digital__heading col-12">Популярный ассортимент</div>
