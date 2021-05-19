@@ -14,7 +14,7 @@ export function Facility(props){
                     </div>
                     <div className="facility__content-wrap">
                         <div className="facility__item-header">Площадь заведения</div>           
-                        <div className="facility__item-text">{currentAdress.square} м²</div>     
+                        <div className="facility__item-text">{currentAdress ? currentAdress.square : ''} м²</div>     
                     </div>
             </div>
             <div className="facility__item row col-12 col-md-4">
@@ -23,7 +23,7 @@ export function Facility(props){
                     </div>
                     <div className="facility__content-wrap">
                         <div className="facility__item-header">Средний чек</div>           
-                        <div className="facility__item-text">{currentAdress.check} ₽</div>     
+                        <div className="facility__item-text">{currentAdress ? currentAdress.check : ''} ₽</div>     
                     </div>
             </div>
             <div className="facility__item row col-12 col-md-4">
@@ -32,7 +32,7 @@ export function Facility(props){
                     </div>
                     <div className="facility__content-wrap">
                         <div className="facility__item-header">Количество чеков</div>           
-                        <div className="facility__item-text">{currentAdress.check_count} чеков</div>     
+                        <div className="facility__item-text">{currentAdress ? currentAdress.check_count : ''} чеков</div>     
                     </div>
             </div>
         </div>
