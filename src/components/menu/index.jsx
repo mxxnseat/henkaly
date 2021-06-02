@@ -53,7 +53,7 @@ export function Menu() {
                                 +79780625281
                             </a>
                         </div>
-                        <a href="//instagram.com/starikhinkalych/" className="social__link social">
+                        <a href="//www.instagram.com/franchise_hinkalych/" className="social__link social">
                             <img src={instagram} alt="Инстаграм" />
                         </a>
                         <a href="//t.me/franchise_hinkalych" className="social__link social">

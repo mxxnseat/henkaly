@@ -35,11 +35,11 @@ export function Team() {
                             <div className="our-team__name">Кирилл Кирпичный</div>
                             <div className="our-team__emp-position">Ресторатор</div>
                             <div className="our-team__expirience">
-                                <p>20 лет опыта в сфере общепита</p>
+                                <p>20 лет опыта в сфере общепита.</p>
                                 <p>Собственные рестораны: «СтарикХинкалыч», «Гагарин Пицца».</p>
                                 <p>Среди которых культовые заведения Крыма: <br />Qбар и другие.</p>
                             </div>
-                            <a href="#" className="our-team__communication">
+                            <a href="//www.instagram.com/kirill_kirpichniy/" className="our-team__communication">
                                 <img src={instagram} alt="Инстаграм" />
                             </a>
                         </div>
@@ -53,10 +53,10 @@ export function Team() {
                                     <div className="our-team__name">Владимир Кисляков</div>
                                     <div className="our-team__emp-position">Управляющий сети «Старик Хинкалыч»</div>
                                     <div className="our-team__expirience">
-                                        <p>10 лет опыта в сфере общепита</p>
+                                        <p>10 лет опыта в сфере общепита</p> надо чтобы он открывался в воц ап 
                                     </div>
-                                    <a href="#" className="our-team__communication">
-                                        <img src={whatsapp} alt="Инстаграм" />
+                                    <a href="//wa.me/79787513584" className="our-team__communication"> 
+                                        <img src={whatsapp} alt="Вотс ап" />
                                     </a>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@ export function Team() {
                                              в ресторанном бизнесе 
                                             и с крупными сетевыми брендами.</p>
                                     </div>
-                                    <a href="#" className="our-team__communication">
+                                    <a href="//wa.me/89162824862" className="our-team__communication">
                                         <img src={whatsapp} alt="Инстаграм" />
                                     </a>
                                 </div>
@@ -85,7 +85,7 @@ export function Team() {
 
                                 <div className="col-md-7 col-6">
                                     <div className="our-team__name">Александр Суворов</div>
-                                    <div className="our-team__emp-position">Менеджер по продажам «Старик Хинкалыч»</div>
+                                    <div className="our-team__emp-position">Менеджер по продажам франшизы СХ</div>
                                     <div className="our-team__expirience">
                                         
                                     </div>

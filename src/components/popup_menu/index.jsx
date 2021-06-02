@@ -26,13 +26,13 @@ export function PopupMenu(){
                     <div className="popup_menu__connection">
                         <a href="tel:+7 978 062 52 81" className="popup_menu__connection-tel">+7 978 062 52 81</a>
                         <div className="row col-10 justify-content-between mx-auto mt-2">
-                            <a href="#wa" className="popup_menu__connection-link">
+                            <a href="//wa.me/79780625281" className="popup_menu__connection-link">
                                 <img src={require("../../assets/img/icons/whatsapp.svg").default} />
                             </a>
                             <a href="//t.me/franchise_hinkalych" className="popup_menu__connection-link">
                                 <img src={require("../../assets/img/icons/telegram_stroke.svg").default} />
                             </a>
-                            <a href="#email" className="popup_menu__connection-link">
+                            <a href="mailto:cx.franch@gmail.com" className="popup_menu__connection-link">
                                 <img src={require("../../assets/img/icons/email_red.svg").default} />
                             </a>
                         </div>

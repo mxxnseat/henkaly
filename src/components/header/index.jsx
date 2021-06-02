@@ -10,12 +10,12 @@ export function Header() {
     const tabsContent = [
         {
             img: wallet,
-            header: "375 000 ₽",
+            header: "400 000 ₽",
             text: "Чистая прибыль"
         },
         {
             img: chart,
-            header: "от 15%",
+            header: "от 18%",
             text: "Среднемесячная рентабельность"
         },
         {
@@ -23,11 +23,11 @@ export function Header() {
             header: "50 дней",
             text: "На открытие вашего заведения"
         },
-        {
-            img: app,
-            header: "Приложение",
-            text: "Для доставки и бронирования"
-        },
+        // {
+        //     img: app,
+        //     header: "Приложение",
+        //     text: "Для доставки и бронирования"
+        // },
     ]
 
     return (
@@ -48,7 +48,7 @@ export function Header() {
                             </div>
 
                         <Button Class="d-md-block d-none">
-                            получить бизнес план
+                            получить бизнес-план
                         </Button>
                     </div>
                     <div className="tabs col-12 col-sm-7 col-xl-4 p-0">
@@ -58,7 +58,7 @@ export function Header() {
                         </div>
                     </div>
                     <Button Class="mx-auto d-md-none d-block">
-                        получить бизнес план
+                        получить бизнес-план
                     </Button>
                 </div>
             </div>

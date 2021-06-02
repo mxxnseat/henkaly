@@ -14,10 +14,10 @@ export function Franchise() {
                 "Инструкции и рекомендации по получению алкогольной лицензии",
                 "Инструкции и работа в системе учета",
             ],
-            buttonText: "ПОЛУЧИТЬ пример франчайзинг бук"
+            buttonText: "Получить пример франчайзинг-бук"
         },
         {
-            slogan: "ЗНАНИЕ СИЛА",
+            slogan: "ЗНАНИЕ-СИЛА",
             heading: "Обучение",
             list: [
                 "Обучение руководителя проекта на наших точках",
@@ -25,7 +25,7 @@ export function Franchise() {
                 "Обучение сотрудников зала",
                 "Обучение сотрудников кухни",
             ],
-            buttonText: "получить пример обучения"
+            buttonText: "Получить пример обучения"
         },
         {
             slogan: "архитектура кухни",
@@ -36,7 +36,7 @@ export function Franchise() {
                 "Макеты базового меню",
                 "Инструкции по контролю качества продукции",
             ],
-            buttonText: "ПОЛУЧИТЬ пример технологии"
+            buttonText: "Поучить пример технологии"
         },
         {
             slogan: "продвижение",
@@ -50,7 +50,7 @@ export function Franchise() {
                 "Предоставление сайта-магазина доставки",
                 "Инфлюенс-маркетинг"
             ],
-            buttonText: "ПОЛУЧИТЬ пример бизнес плана"
+            buttonText: "Получить пример бизнес плана"
         },
         {
             slogan: "КАЧЕСТВЕННЫЙ СЕРВИС",
@@ -64,7 +64,7 @@ export function Franchise() {
                 "Чек-листы работы",
                 "Инструкции по проведению инвентаризации"
             ],
-            buttonText: "получить пример инструкции"
+            buttonText: "Получить пример инструкции"
         }
     ]
 
@@ -77,7 +77,7 @@ export function Franchise() {
                         </h2>
 
                     <div className="subhead col-12 p-0">
-                    Что входит в пакет франчайза «Старик Хинкалыч».
+                    Что входит в пакет франчайза «Старик Хинкалыч»?
                     </div>
 
                     <div className="row col-12 mx-auto justify-content-md-between justify-content-xl-center justify-content-center p-0 p-md-1">
@@ -89,7 +89,7 @@ export function Franchise() {
                     </div>
                     
 
-                    <Button Class='mx-auto'>Получить бизнес план</Button>
+                    <Button Class='mx-auto'>Получить бизнес-план</Button>
                 </div>
             </div>
         </section>

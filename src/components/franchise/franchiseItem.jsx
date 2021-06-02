@@ -1,4 +1,10 @@
+import { useDispatch } from "react-redux"
+import {modalAction} from "../../store/actions/modal";
+
 export function FranchiseItem({ number, heading, slogan, list, buttonText }) {
+    const dispatch = useDispatch();
+
+
     return (
         <div className="franchise__item col-md-6 col-xl-4">
             <div className="franchise__number">0{number}</div>
@@ -15,7 +21,7 @@ export function FranchiseItem({ number, heading, slogan, list, buttonText }) {
                     })
                 }
             </ul>
-            <a href="#" className="franchise__link">{buttonText}</a>
+            <a href="javascript: void(0);" className="franchise__link" onClick={()=>dispatch(modalAction())}>{buttonText}</a>
         </div>
     )
 }
