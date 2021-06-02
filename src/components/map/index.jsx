@@ -76,7 +76,7 @@ export function HenkaliMap(){
                             <MapLegend />
                         </div>
                     </div>
-                    <Button Class="mx-auto d-md-block d-none">получить бизнес план</Button>
+                    <Button Class="mx-auto d-md-block d-none">получить бизнес-план</Button>
                 </div>
             </div>
         </section>

@@ -15,7 +15,7 @@ export function Blog(){
                         <div className="blog__video-item main-video">
                             <Play />
                             <div className="video-preview_content">
-                                Как зарабатывать на хинкалях от 350 тысяч в месяц 
+                                Как зарабатывать на хинкали от 350 тысяч в месяц 
                             </div>
                         </div>
                         <div className="blog__video-item">

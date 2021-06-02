@@ -16,7 +16,7 @@ export function Stage() {
             text: 'Заключение договора аренды'
         },
         {
-            text: 'Дизайн-проект магазина, строительные работы'
+            text: 'Дизайн-проект хинкальной, строительные работы'
         },
         {
             text: 'Набор персонала и его стажировка'
@@ -36,7 +36,7 @@ export function Stage() {
                     Этапы
                 </div>взаимодействия
             </h2>
-            <div className="finance__stage-process">Как будет строится процесс развертывания нашей франшизы.</div>
+            <div className="finance__stage-process">Как будет строиться процесс развертывания нашей франшизы.</div>
             <div className="finance__stage-process_wrap">
                 {
                     stageList.map((stage, index) => {

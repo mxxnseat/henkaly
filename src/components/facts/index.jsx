@@ -39,7 +39,7 @@ export function Facts(){
                         }
                     </div>
                     <Button Class="mx-auto">
-                        Получить бизнес план
+                        Получить бизнес-план
                     </Button>
                 </div>
             </div>
