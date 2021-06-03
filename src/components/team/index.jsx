@@ -89,7 +89,7 @@ export function Team() {
                                     <div className="our-team__expirience">
                                         
                                     </div>
-                                    <a href="#" className="our-team__communication">
+                                    <a href="//wa.me/79780625281" className="our-team__communication">
                                         <img src={whatsapp} alt="Инстаграм" />
                                     </a>
                                 </div>
@@ -97,7 +97,7 @@ export function Team() {
                         
                             <div className="col-12 row justify-content-md-between align-items-center justify-content-center">
                                 <div className="our-team__phone">+7 978 062-52-81</div>
-                                <button className='button'>позвонить</button>
+                                <a href="tel:7 978 062-52-81" className='button'>позвонить</a>
                             </div>                            
                         </div>
                     </div>

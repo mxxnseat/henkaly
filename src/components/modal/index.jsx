@@ -52,7 +52,7 @@ export function FeedBackModal(props) {
                     console.log("Some troubles. Try later");
                 })
         } else {
-            alert("ALERT 12RWDKLFKWDHOIF WEJK");
+            alert("Введите корректные значения в поля");
         }
     }
 
