@@ -4,7 +4,7 @@ import { FranchiseItem } from "./franchiseItem";
 export function Franchise() {
     const franchiseData = [
         {
-            slogan: "ВСЕГДА ПОД РУКОЙ",
+            slogan: "франчайза",
             heading: "Франчайзинг-бук",
             list: [
                 "Франчайзинг-бук",
