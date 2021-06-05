@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import {modalAction} from "../../store/actions/modal";
 import {setSticky} from "../../store/actions/sticky";
 
-import {scroll} from "./scrollOnClick";
+import {scroll} from "../total/scrollOnClick";
 import { useDispatch, useSelector } from "react-redux";
 
 export function Menu() {
@@ -53,10 +53,10 @@ export function Menu() {
                                 +79780625281
                             </a>
                         </div>
-                        <a href="//www.instagram.com/franchise_hinkalych/" className="social__link social">
+                        <a href="//www.instagram.com/franchise_hinkalych/" target="_blank" className="social__link social">
                             <img src={instagram} alt="Инстаграм" />
                         </a>
-                        <a href="//t.me/franchise_hinkalych" className="social__link social">
+                        <a href="//t.me/franchise_hinkalych" target="_blank" className="social__link social">
                             <img src={telegram} alt="Телеграм" />
                         </a>
                     </div>

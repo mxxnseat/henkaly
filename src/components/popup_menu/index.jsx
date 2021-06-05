@@ -1,7 +1,7 @@
 import { ModalHeader } from "../total/modal_header-mob";
 import { popupMenuAction, modalAction } from "../../store/actions/modal";
 import { useDispatch } from "react-redux";
-import {scroll} from "../menu/scrollOnClick";
+import {scroll} from "../total/scrollOnClick";
 
 export function PopupMenu(){
     const dispatch = useDispatch();

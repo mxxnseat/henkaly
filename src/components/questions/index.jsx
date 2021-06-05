@@ -64,7 +64,7 @@ export function Questions(){
                     </h2>
                     <div className="subhead mb-5">Не нашли нужную информацию? Задайте вопрос.</div>
 
-                    <Button Class="mx-auto mx-xl-0">Задать вопрос</Button>
+                    <a href="//wa.me/79780625281" className="button mx-auto mx-xl-0 d-flex align-items-center justify-content-center">Задать вопрос</a>
                 </div>
             </div>
         </section>

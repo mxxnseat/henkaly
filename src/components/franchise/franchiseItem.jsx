@@ -21,7 +21,7 @@ export function FranchiseItem({ number, heading, slogan, list, buttonText }) {
                     })
                 }
             </ul>
-            <a href="javascript: void(0);" className="franchise__link" onClick={()=>dispatch(modalAction())}>{buttonText}</a>
+            <div className="franchise__link" onClick={()=>dispatch(modalAction())}>{buttonText}</div>
         </div>
     )
 }

@@ -143,8 +143,9 @@
 
 @media screen and (min-width: 320px) and (max-width: 768px){
     .finance{
-        background-image: none;
-
+        background-size: 100% 863px;
+        background-position: left top;
+        
         &__model,
         &__stage{
             min-height: 874px;
@@ -165,7 +166,6 @@
             }
         }
         &__model{
-            background-color: $darkBlue;
 
             &-period{
                 font-size: 16px;

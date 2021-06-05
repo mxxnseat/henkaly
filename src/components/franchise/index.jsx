@@ -4,7 +4,7 @@ import { FranchiseItem } from "./franchiseItem";
 export function Franchise() {
     const franchiseData = [
         {
-            slogan: "франчайза",
+            slogan: "Опыт",
             heading: "Франчайзинг-бук",
             list: [
                 "Франчайзинг-бук",
@@ -73,11 +73,11 @@ export function Franchise() {
             <div className="container pt-5 pb-5">
                 <div className="row">
                     <h2 className="heading">
-                        <span className="text_select-red">Пакет франчайза</span> «Старик Хинкалыч»
+                        <span className="text_select-red">Пакет франчайзинга</span> «Старик Хинкалыч»
                         </h2>
 
                     <div className="subhead col-12 p-0">
-                    Что входит в пакет франчайза «Старик Хинкалыч»?
+                    Что входит в пакет франчайзинга «Старик Хинкалыч»?
                     </div>
 
                     <div className="row col-12 mx-auto justify-content-md-between justify-content-xl-center justify-content-center p-0 p-md-1">
