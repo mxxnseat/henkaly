@@ -107,11 +107,11 @@ export function FeedBackModal(props) {
                     </div>
 
                     <div className="row flex-nowrap col-xl-8 justify-content-between submit-wrapper align-items-center p-0 mx-auto">
-                        <a href="//wa.me/79780625281" className="social wa">
+                        <a href="//wa.me/79780625281" target="_blank" className="social wa">
                             WhatsApp
                         </a>
                         <button className="button" onClick={buttonSendHandler}>получить предложение</button>
-                        <a href="//t.me/franchise_hinkalych" className="social tg">
+                        <a href="//t.me/franchise_hinkalych" target="_blank" className="social tg">
                             Telegram
                         </a>
                     </div>
