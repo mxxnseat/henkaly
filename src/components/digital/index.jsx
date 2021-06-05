@@ -25,15 +25,15 @@ export function Digital(){
             percent: "35%"
         },
         {
-            img: hachapuri,
-            header: "Хачапури",
-            percent: "25%"
-        },
-        {
             img: hot_dish,
             header: "Горячие блюда",
             percent: "40%"
         },
+        {
+            img: hachapuri,
+            header: "БАР",
+            percent: "25%"
+        }
     ];
     
     const dispatch = useDispatch();

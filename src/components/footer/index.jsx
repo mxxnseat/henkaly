@@ -1,3 +1,5 @@
+import {scroll} from "../total/scrollOnClick";
+
 export function Footer(){
     return (
         <footer className="footer">
@@ -6,25 +8,24 @@ export function Footer(){
                     <div className="footer__list col-xl-2 col-md-4">
                         <div className="footer__list-header">Концепция </div>
 
-                        <a href="#" className="footer__link">Хинкальные - что это?</a>
-                        <a href="#" className="footer__link">Хинкальные  в цифрах</a>
-                        <a href="#" className="footer__link">Ценности хинкальной</a>
+                        <div onClick={()=>scroll(".henkali_is")} className="footer__link">Хинкальные - что это?</div>
+                        <div onClick={()=>scroll(".digital")} className="footer__link">Хинкальные  в цифрах</div>
+                        <div onClick={()=>scroll(".treasure")} className="footer__link">Ценности хинкальной</div>
                     </div>
                     <div className="footer__list col-xl-2 col-md-4">
                         <div className="footer__list-header">Команда</div>
 
-                        <a href="#" className="footer__link">Пакет франчайза</a>
-                        <a href="#" className="footer__link">Отзывы франчази</a>
-                        <a href="#" className="footer__link">F.A.Q.</a>
+                        <div onClick={()=>scroll(".franchise")} className="footer__link">Пакет франчайза</div>
+                        <div onClick={()=>scroll(".digital")} className="footer__link">Отзывы франчази</div>
+                        <div onClick={()=>scroll(".questions")} className="footer__link">F.A.Q.</div>
                     </div>
                     <div className="footer__list col-xl-2 col-md-4">
                         <div className="footer__list-header">Условия</div>
 
-                        <a href="#" className="footer__link">Финансова модель</a>
-                        <a href="#" className="footer__link">Этапы взаимодействия</a>
-                        <a href="#" className="footer__link">Преимущества</a>
+                        <div onClick={()=>scroll(".finance__model")} className="footer__link">Финансова модель</div>
+                        <div onClick={()=>scroll(".finance__stage")} className="footer__link">Этапы взаимодействия</div>
                     </div>
-                    <div className="footer__list col-md-6 col-xl-3 ml-xl-3 mt-md-5 mt-0 mt-xl-0 text-left">
+                    <div className="footer__list col-md-6 col-xl-3 ml-xl-3 mt-md-5 mt-0 mt-xl-0">
                         <div className="footer__list-header">Контакты</div>
 
                         <a href="tel:+7 978 062 52 81" className="footer__link phone">+7 978 062 52 81</a>
@@ -33,24 +34,23 @@ export function Footer(){
                             <a href="//t.me/franchise_hinkalych" className="social_contacts-tg"></a>
                             <a href="mailto:cx.franch@gmail.com" className="social_contacts-mail"></a>
                         </div>
+
+                        <a href="mailto:cx.franch@gmail.com" className="footer__link email">cx.franch@gmail.com</a>
                     </div>
                     <div className="footer__list col-md-6 col-xl-3 mt-md-5 mt-0 mt-xl-0">
                         <div className="footer__list-header">Мы в соц. сетях</div>
 
                         <div className="row social_contacts">
-                            <a href="//facebook.com/starikhinkalych/" className="social_contacts-fb col-5">Facebook</a>
-                            <a href="#" className="social_contacts-yt col-5">YouTube</a>
-                            <a href="//instagram.com/franchise_hinkalych" className="social_contacts-inst col-5">Instagram</a>
-                            <a href="//vk.com/starikhinkalych" className="social_contacts-vk col-5">Вконтакте</a>
+                            <a href="#" target="_blank" className="social_contacts-yt col-5">YouTube</a>
+                            <a href="//instagram.com/franchise_hinkalych" target="_blank" className="social_contacts-inst col-5">Instagram</a>
+                            <a href="//vk.com/starikhinkalych" target="_blank" className="social_contacts-vk col-5">Вконтакте</a>
                         </div>
                     </div>
                 </div>
             
                 <div className="copyright row col-md-12 mx-auto">
-                    <div className="copyright__text col-md-3">«Старик Хинкалыч» &copy;  2021</div>
-                    <a href="#" className="copyright__link col-md-3">Пользовательское соглашение</a>
-                    <a href="#" className="copyright__link col-md-3">Политика обработки персональных данных</a>
-                    <div className="copyright__text col-md-3">cx.franch@gmail.com </div>
+                    <div className="copyright__text col-md-3 pl-0">«Старик Хинкалыч» &copy;  2021</div>
+                    <div className="copyright__text col-md-3 pr-0 text-right">cx.franch@gmail.com </div>
                 </div>
             </div>
         </footer>

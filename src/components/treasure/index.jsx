@@ -8,11 +8,11 @@ export function Treasure() {
 
     const treasures = [
         {
-            active: true,
             img: wallet,
             heading: "Цена",
             list: [
                 {
+                    active: true,
                     heading: "Хинкали от 35 рублей",
                     text: "Сохраняем неизменную цену в любом городе."
                 },
@@ -27,7 +27,6 @@ export function Treasure() {
             ]
         },
         {
-            active: false,
             img: timer,
             heading: "Скорость",
             list: [
@@ -37,11 +36,6 @@ export function Treasure() {
                         Отдаем дюжину хинкали за 12 минут.`
                 },
                 {
-                    heading: "Тестируем все блюда",
-                    text: `Смотрим спрос покупателей
-                    и обновляем позиции сезонно.`
-                },
-                {
                     heading: "Три недели на открытие*",
                     text: "50 дней на открытие.",
                     subtext: "*Наш рекорд открытия ресторана."
@@ -49,11 +43,11 @@ export function Treasure() {
             ]
         },
         {
-            active: true,
             img: like,
             heading: "Атмосфера",
             list: [
                 {
+                    active: true,
                     heading: "Грузинская кухня",
                     text: `Собрали и протестировали
                             лучшие блюда грузинской кухни.`

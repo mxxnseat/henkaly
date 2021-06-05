@@ -31,6 +31,7 @@
             }
             &-wa{
                 background-image: url("../assets/img/icons/whatsapp_white.svg");
+                margin-top: -3px;
             }
             &-tg{
                 background-image: url("../assets/img/icons/telegram_stroke-white.svg");
@@ -63,6 +64,7 @@
         margin-bottom: 8px;
         font-family: $text;
         color: $white;
+        cursor: pointer;
         font-size: 14px;
         line-height: 140%;
         display: block;
@@ -77,6 +79,10 @@
             color: $white;
             margin-top: -5px;
             margin-bottom: 23px;
+        }
+        &.email{
+            font-weight: bold;
+            margin-top: 15px;
         }
     }
 

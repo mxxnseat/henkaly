@@ -1,4 +1,5 @@
 export function TreasureItem(props){
+    console.log(props);
     return (
         <div className="treasure__item">
             <div className="treasure__item-head">
@@ -6,19 +7,17 @@ export function TreasureItem(props){
                 {props.heading}
             </div>
             <ul className="treasure__list">
-                <li className={props.active ? 'treasure__list-item active' : 'treasure__list-item'}>
-                    <div className="treasure__list-item__head">{props.list[0].heading}</div>
-                    <div className="treasure__list-item__text">{props.list[0].text}</div>
-                </li>
-                <li className="treasure__list-item">
-                    <div className="treasure__list-item__head">{props.list[1].heading}</div>
-                    <div className="treasure__list-item__text">{props.list[1].text}</div>
-                </li>
-                <li className="treasure__list-item">
-                    <div className="treasure__list-item__head">{props.list[2].heading}</div>
-                    <div className="treasure__list-item__text">{props.list[2].text}</div>
-                    <div className="treasure__list-item__subtext">{props.list[2].subtext ? props.list[2].subtext : ''}</div>
-                </li>
+                {
+                    props.list.map( (item,index)=>{
+                        return (
+                        <li key={index} className={item.active ? 'treasure__list-item active' : 'treasure__list-item'}>
+                            <div className="treasure__list-item__head">{item.heading}</div>
+                            <div className="treasure__list-item__text">{item.text}</div>
+                            <div className="treasure__list-item__subtext">{item.subtext ? item.subtext : ''}</div>
+                        </li>
+                        )
+                    })
+                }
             </ul>
         </div>
     )

@@ -9,7 +9,7 @@ export function Model(){
         {
             img: require("../../assets/img/tab-wallet.svg").default,
             text: 'Прибыль в месяц',
-            value: 'от 375 000 ₽'
+            value: 'от 400 000 ₽'
         },
         {
             img: require("../../assets/img/icons/ticket.svg").default,
@@ -29,7 +29,7 @@ export function Model(){
         {
             img: require("../../assets/img/tab-chart.svg").default,
             text: 'Рентабельность в месяц',
-            value: '10–15%'
+            value: '18%'
         }
     ]
 
