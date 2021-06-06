@@ -9,7 +9,20 @@ import axios from "axios";
 
 export function FeedBackModal(props) {
     const dispatch = useDispatch();
-
+    const [errors, setError] = useState({
+        name: {
+            active: false,
+            value: 'Имя не должно содержать символов !@#$%^&*&)(^?'
+        },
+        phone: {
+            active: false,
+            value: 'Неправильно набран телефон'
+        },
+        email: {
+            active: false,
+            value: 'Неправильно набран email. Повторите ввод'
+        },
+    });
     const [inputsValue, setInputValue] = useState({
         name: '',
         phone: '',
@@ -19,7 +32,6 @@ export function FeedBackModal(props) {
     const inputHandler = (e) => {
         const field = e.target.getAttribute("name");
         const value = e.target.value;
-        console.log(value);
         setInputValue({
             ...inputsValue,
             [field]: value
@@ -27,33 +39,81 @@ export function FeedBackModal(props) {
     }
 
     const buttonSendHandler = (e) => {
-        const errors = {
-
-        };
 
         const phone = inputsValue["phone"].replace(/\D/g, '');
-
-        emailValidate(inputsValue["email"]) ? delete errors["email"] : errors["email"] = true;
-        phoneValidate(phone) ? delete errors["phone"] : errors["phone"] = true;
-        nameValidate(inputsValue["name"]) ? delete errors["name"] : errors["name"] = true;
-
+        nameValidate(inputsValue["name"]) ? setError(errors => {
+            return {
+                ...errors,
+                name: {
+                    active: false,
+                    value: 'Имя не должно содержать символов !@#$%^&*&)(^?'
+                }
+            }
+        }) : setError(errors => {
+            return {
+                ...errors,
+                name: {
+                    active: true,
+                    value: 'Имя не должно содержать символов !@#$%^&*&)(^?'
+                }
+            }
+        });
+        console.log(errors);
+        emailValidate(inputsValue["email"]) ? setError(errors => {
+            return {
+                ...errors,
+                email: {
+                    active: false,
+                    value: 'Неправильно набран email. Повторите ввод'
+                }
+            }
+        }) : setError(errors => {
+            return {
+                ...errors,
+                email: {
+                    active: true,
+                    value: 'Неправильно набран email. Повторите ввод'
+                }
+            }
+        });
+        console.log(errors);
+        phoneValidate(phone) ? setError(errors => {
+            return {
+                ...errors,
+                phone: {
+                    active: false,
+                    value: 'Неправильно набран телефон'
+                }
+            }
+        }) : setError(errors => {
+            return {
+                ...errors,
+                phone: {
+                    active: true,
+                    value: 'Неправильно набран телефон'
+                }
+            }
+        });
+        console.log(errors);
         const privacyCheckbox = document.querySelector("#privacy");
 
-        if (!Object.keys(errors).length && privacyCheckbox.checked) {
-            axios.post("/sendForm", JSON.stringify(inputsValue), {
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            })
-                .then(data=>{
-                    console.log(data);
-                })
-                .catch(error=>{
-                    console.log("Some troubles. Try later");
-                })
-        } else {
-            alert("Введите корректные значения в поля");
-        }
+
+        // if (!Object.keys(errors).length && privacyCheckbox.checked) {
+        //     axios.post("/sendForm", JSON.stringify(inputsValue), {
+        //         headers: {
+        //             "Content-Type": "application/json"
+        //         }
+        //     })
+        //         .then(data=>{
+        //             console.log(data);
+        //         })
+        //         .catch(error=>{
+        //             console.log("Some troubles. Try later");
+        //         })
+        //     console.log(errors);
+
+        // } else {
+        // }
     }
 
 
@@ -84,16 +144,25 @@ export function FeedBackModal(props) {
 
                 <div className="feedback_modal__form mx-auto row col-12 p-0">
                     <div className="col-md-12 row flex-md-nowrap p-0 mx-auto feedback_modal__input-wrap">
-                        <input type="text" onChange={inputHandler} name="name" defaultValue={inputsValue.name} className="feedback_modal__input" placeholder="Имя" />
-                        <input type="text" onChange={inputHandler} name="email" defaultValue={inputsValue.email} className="feedback_modal__input" placeholder="E-mail" />
-                        <InputMask
-                            className="feedback_modal__input"
-                            onChange={inputHandler}
-                            name="phone"
-                            defaultValue={inputsValue.phone}
-                            mask="+7 (999) 999-99-99"
-                            placeholder="Телефон"
-                        />
+                        <div className={errors.name.active ? "feedback_modal__input-wrap error" : "feedback_modal__input-wrap"}>
+                            <input type="text" onChange={inputHandler} name="name" defaultValue={inputsValue.name} className="feedback_modal__input" placeholder="Имя" />
+                            <div className="feedback_modal__input-wrap__error">{errors.name.active ? errors.name.value : ''}</div>
+                        </div>
+                        <div className={errors.email.active ? "feedback_modal__input-wrap error" : "feedback_modal__input-wrap"}>
+                            <input type="text" onChange={inputHandler} name="email" defaultValue={inputsValue.email} className="feedback_modal__input" placeholder="E-mail" />
+                            <div className="feedback_modal__input-wrap__error">{errors.email.active ? errors.email.value : ''}</div>
+                        </div>
+                        <div className={errors.phone.active ? "feedback_modal__input-wrap error" : "feedback_modal__input-wrap"}>
+                            <InputMask
+                                className="feedback_modal__input"
+                                onChange={inputHandler}
+                                name="phone"
+                                defaultValue={inputsValue.phone}
+                                mask="+7 (999) 999-99-99"
+                                placeholder="Телефон"
+                            />
+                            <div className="feedback_modal__input-wrap__error">{errors.phone.active ? errors.phone.value : ''}</div>
+                        </div>
                     </div>
 
                     <div className="row col-12 mx-auto p-0 align-items-center">
