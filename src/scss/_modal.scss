@@ -78,9 +78,28 @@
             }
         }
     }
-    &__input{
+    &__input-wrap{
+        &:nth-child(2){
+            margin: 0 30px;
+        }
         width: 100%;
         max-width: 286px;
+
+        &.error{
+            .feedback_modal__input{
+                background-color: rgba(188, 42, 48, 0.1);
+                color: $red;
+            }
+        }
+        &__error{
+            font-size: 12px;
+            line-height: 140%;
+            color: #BC2A30;
+            font-family: $text;
+        }
+    }
+    &__input{
+        width: 100%;
         background-color: #EFEFEF;
         outline: none;
         border-radius: 15px;
@@ -91,9 +110,7 @@
         font-family: $text;
         font-size: 20px;
 
-        &:nth-child(2){
-            margin: 0 30px;
-        }
+        
         &::placeholder{
             color: #666;
             font-family: $text;
