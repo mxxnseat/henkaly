@@ -135,7 +135,7 @@ export function FeedBackModal(props) {
                 </div>
 
                 <div className="feedback_modal__form mx-auto row col-12 p-0">
-                    <div className="col-md-12 row flex-md-nowrap p-0 mx-auto feedback_modal__input-wrap">
+                    <div className="col-md-12 row flex-md-nowrap p-0 mx-auto justify-content-center justify-content-md-between">
                         <div className={errors.name.active ? "feedback_modal__input-wrap error" : "feedback_modal__input-wrap"}>
                             <input type="text" onChange={inputHandler} name="name" defaultValue={inputsValue.name} className="feedback_modal__input" placeholder="Имя" />
                             <div className="feedback_modal__input-wrap__error">{errors.name.active ? errors.name.value : ''}</div>
