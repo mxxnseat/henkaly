@@ -220,14 +220,15 @@
         }
         &__input-wrap{
             max-width: 315px;
-        }
-        &__input{
-            max-width: 315px;
             margin-bottom: 30px;
             &:nth-child(2){
                 margin: 0;
                 margin-bottom: 30px;
             }
+        }
+        &__input{
+            max-width: 315px;
+            
         }
 
         .submit-wrapper{
