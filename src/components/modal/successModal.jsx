@@ -5,9 +5,7 @@ export function SuccessModal(){
     const dispatch = useDispatch();
 
     useEffect(()=>{
-        console.log(1);
         setTimeout(()=>{
-            console.log(1);
             dispatch(popupSuccessAction());
         }, 5000);
     }, []);
