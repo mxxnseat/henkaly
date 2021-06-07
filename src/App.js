@@ -2,15 +2,15 @@ import "./scss/style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import React, { useState } from "react";
-import { useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
-import {Sale} from "./components/sale";
-import {Header} from "./components/header";
-import {Gallery} from "./components/gallery";
-import {HenkaliIs} from "./components/henkaliIs";
-import {Facts} from "./components/facts";
-import {Digital} from "./components/digital";
-import {Treasure} from "./components/treasure";
+import { Sale } from "./components/sale";
+import { Header } from "./components/header";
+import { Gallery } from "./components/gallery";
+import { HenkaliIs } from "./components/henkaliIs";
+import { Facts } from "./components/facts";
+import { Digital } from "./components/digital";
+import { Treasure } from "./components/treasure";
 import { Team } from "./components/team";
 import { Franchise } from "./components/franchise";
 import { Finance } from "./components/finance";
@@ -25,19 +25,22 @@ import { Footer } from "./components/footer";
 import { PopupModal } from "./components/popup_modal";
 import { PopupMenu } from "./components/popup_menu";
 
-import {Menu} from "./components/menu";
+import { Menu } from "./components/menu";
 
 import LazyLoad from "react-lazyload";
+import { SuccessModal } from "./components/modal/successModal";
 
 
 function App() {
   const [saleVisibility, setSaleVisibility] = useState(true);
-  const isModal = useSelector((store)=>store.popup.isModal);
-  const isPopup = useSelector((store)=>store.popup.isPopup);
+  const isModal = useSelector((store) => store.popup.isModal);
+  const isPopup = useSelector((store) => store.popup.isPopup);
+  const isSuccess = useSelector((store) => store.popup.isSuccess);
+  console.log(isSuccess);
 
-  if(isModal || isPopup){
-    document.querySelector("html").setAttribute("id","popup");
-  }else{
+  if (isModal || isPopup) {
+    document.querySelector("html").setAttribute("id", "popup");
+  } else {
     document.querySelector("html").removeAttribute("id");
   }
 
@@ -50,10 +53,13 @@ function App() {
         isModal ? <PopupModal /> : ''
       }
       {
+        isSuccess ? <SuccessModal /> : ''
+      }
+      {
         isPopup ? <PopupMenu /> : ''
       }
       {
-        !isModal ? <Menu /> : ''
+        (!isModal && !isSuccess) ? <Menu /> : ''
       }
 
       <Header />
@@ -61,8 +67,8 @@ function App() {
       <LazyLoad offset={100}>
         <Gallery />
       </LazyLoad>
-      
-      
+
+
       <LazyLoad offset={100}>
         <HenkaliIs />
       </LazyLoad>
@@ -91,7 +97,7 @@ function App() {
       <LazyLoad offset={100}><Reviews /></LazyLoad>
       <LazyLoad offset={100}><Questions /></LazyLoad>
 
-      
+
       <Feedback />
       <Footer />
     </React.Fragment>

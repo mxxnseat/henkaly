@@ -159,6 +159,26 @@
     }
 }
 
+.success_content{
+    max-width: 496px;
+}
+.success_thx{
+    text-align: center;
+    color: $red!important;
+}
+.success_text{
+    font-family: $text;
+    font-size: 20px;
+    color: #666666;
+    text-align: center;
+}
+.success_memo{
+    color: #ABABAB;
+    font-size: 14px;
+    font-family: $text;
+    text-align: center;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px){
     .feedback_modal{
         border-radius: 0;
