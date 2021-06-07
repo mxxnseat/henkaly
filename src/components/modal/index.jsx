@@ -1,14 +1,15 @@
 import { useDispatch } from "react-redux";
 import InputMask from "react-input-mask";
 
-import { modalAction } from "../../store/actions/modal";
-import { useState } from "react";
+import { modalAction, popupSuccessAction, closePopup } from "../../store/actions/modal";
+import { useRef, useState } from "react";
 
 import { nameValidate, emailValidate, phoneValidate } from "./validator";
 import axios from "axios";
 
 export function FeedBackModal(props) {
     const dispatch = useDispatch();
+    const checkbox = useRef(null);
     const [errors, setError] = useState({
         name: {
             active: false,
@@ -58,7 +59,6 @@ export function FeedBackModal(props) {
                 }
             }
         });
-        console.log(errors);
         emailValidate(inputsValue["email"]) ? setError(errors => {
             return {
                 ...errors,
@@ -76,7 +76,6 @@ export function FeedBackModal(props) {
                 }
             }
         });
-        console.log(errors);
         phoneValidate(phone) ? setError(errors => {
             return {
                 ...errors,
@@ -94,26 +93,19 @@ export function FeedBackModal(props) {
                 }
             }
         });
-        console.log(errors);
-        const privacyCheckbox = document.querySelector("#privacy");
+        let counterErrorChecker = 0;
 
+        for(let item in errors){
+            if(errors[item].active){
+                counterErrorChecker++;
 
-        // if (!Object.keys(errors).length && privacyCheckbox.checked) {
-        //     axios.post("/sendForm", JSON.stringify(inputsValue), {
-        //         headers: {
-        //             "Content-Type": "application/json"
-        //         }
-        //     })
-        //         .then(data=>{
-        //             console.log(data);
-        //         })
-        //         .catch(error=>{
-        //             console.log("Some troubles. Try later");
-        //         })
-        //     console.log(errors);
-
-        // } else {
-        // }
+                break;
+            }
+        }
+        if(counterErrorChecker === 0 && checkbox.current.checked){
+            dispatch(popupSuccessAction());
+            dispatch(closePopup());
+        }
     }
 
 
@@ -167,7 +159,7 @@ export function FeedBackModal(props) {
 
                     <div className="row col-12 mx-auto p-0 align-items-center">
                         <label>
-                            <input type="checkbox" className="hidden_checkbox" id="privacy" />
+                            <input type="checkbox" ref={checkbox} className="hidden_checkbox" id="privacy" />
                             <span className="feedback_modal__form-checkbox"></span>
                             <span>
                                 Отправляя данные с этой формы, Вы принимаете <a href="#" className="text_select-red">условия политики конфиденциальности</a>
