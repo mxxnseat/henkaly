@@ -178,7 +178,6 @@ export function FeedBackModal(props) {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }
