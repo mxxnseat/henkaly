@@ -21,7 +21,7 @@ export function YouGet(){
             text: "",
         },
         {
-            bold: "59 дней \n—\n Открытие точки",
+            bold: "50 дней \n—\n Открытие точки",
             text: "",
         },
         {

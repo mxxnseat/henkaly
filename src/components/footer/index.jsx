@@ -16,7 +16,7 @@ export function Footer(){
                         <div className="footer__list-header">Команда</div>
 
                         <div onClick={()=>scroll(".franchise")} className="footer__link">Пакет франчайза</div>
-                        <div onClick={()=>scroll(".digital")} className="footer__link">Отзывы франчази</div>
+                        <div onClick={()=>scroll(".reviews")} className="footer__link">Отзывы франчази</div>
                         <div onClick={()=>scroll(".questions")} className="footer__link">F.A.Q.</div>
                     </div>
                     <div className="footer__list col-xl-2 col-md-4">
